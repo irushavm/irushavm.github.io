@@ -17,7 +17,6 @@ html {
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
-        background-color: #4B4D52;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -74,4 +73,8 @@ of those sections to manage the look and feel of the site. */
 
 .footer-text{
     color:#fff;
+}
+
+.navbar-default .navbar-brand {
+  color: #000;
 }
