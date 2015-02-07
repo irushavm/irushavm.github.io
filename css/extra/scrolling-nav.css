@@ -70,3 +70,7 @@ of those sections to manage the look and feel of the site. */
   padding-left: 0;
   padding-top: 10%;
 }
+
+.footer-text{
+    color:red;
+}
