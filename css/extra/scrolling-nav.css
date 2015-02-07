@@ -35,21 +35,21 @@ of those sections to manage the look and feel of the site. */
     height: 100%;
     padding-top: 100px;
     text-align: center;
-    background: #fff;
+    background: #fff2e7;
 }
 
 .about-section {
     height: 100%;
     padding-top: 100px;
     text-align: center;
-    background: #edd;
+    background: #de8642;
 }
 
 .services-section {
     height: 100%;
     padding-top: 100px;
     text-align: center;
-    background: #fff;
+    background: #fff2e7;
 }
 
 .contact-section {
@@ -57,13 +57,13 @@ of those sections to manage the look and feel of the site. */
     padding-top: 100px;
     padding-bottom: 50px;
     text-align: center;
-    background: #eee;
+    background: #de8642;
 }
 .footer-section {
     height: 50px;
     padding-top: 20px;
     text-align: center;
-    background: #282828;
+    background: #4B4D52;
 }
 
 .list-group {
@@ -72,5 +72,5 @@ of those sections to manage the look and feel of the site. */
 }
 
 .footer-text{
-    color:red;
+    color:#fff;
 }
