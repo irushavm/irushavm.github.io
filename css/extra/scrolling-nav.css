@@ -42,14 +42,14 @@ of those sections to manage the look and feel of the site. */
     height: 100%;
     padding-top: 100px;
     text-align: center;
-    background: #f8f8f8;
+    background: #fff2e7;
 }
 
 .services-section {
     height: 100%;
     padding-top: 100px;
     text-align: center;
-    background: #fff2e7;
+    background: #f8f8f8;
 }
 
 .contact-section {
@@ -57,7 +57,7 @@ of those sections to manage the look and feel of the site. */
     padding-top: 100px;
     padding-bottom: 50px;
     text-align: center;
-    background: #f8f8f8;
+    background: #fff2e7;
 }
 .footer-section {
     height: 100%;
