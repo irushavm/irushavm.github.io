@@ -59,7 +59,7 @@ of those sections to manage the look and feel of the site. */
     background: #eee;
 }
 .footer-section {
-    height: 100%;
+    height: 40px;
     padding-top: 150px;
     text-align: center;
     background: #000;
