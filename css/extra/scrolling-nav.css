@@ -76,8 +76,8 @@ of those sections to manage the look and feel of the site. */
 }
 
 .navbar-default .navbar-brand {
-  font-size: 2em;
   color: #de8642;
+  font-weight: bold;
 
 }
 
