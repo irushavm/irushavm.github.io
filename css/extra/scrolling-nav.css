@@ -60,10 +60,10 @@ of those sections to manage the look and feel of the site. */
     background: #eee;
 }
 .footer-section {
-    height: 25px;
+    height: 50px;
     padding-top: 20px;
     text-align: center;
-    background: #000;
+    background: #282828;
 }
 
 .list-group {
