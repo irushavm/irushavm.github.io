@@ -67,6 +67,5 @@ of those sections to manage the look and feel of the site. */
 
 .list-group {
   padding-left: 0;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  padding-top: 20px;
 }
