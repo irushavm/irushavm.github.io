@@ -83,6 +83,11 @@ of those sections to manage the look and feel of the site. */
 
 h1{
     color:#de8642;;
+}
 
-
+hr {
+  height: 2px;
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
 }
