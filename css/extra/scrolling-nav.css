@@ -42,7 +42,7 @@ of those sections to manage the look and feel of the site. */
     height: 100%;
     padding-top: 100px;
     text-align: center;
-    background: #de8642;
+    background: #fff2e7;
 }
 
 .services-section {
@@ -57,7 +57,7 @@ of those sections to manage the look and feel of the site. */
     padding-top: 100px;
     padding-bottom: 50px;
     text-align: center;
-    background: #de8642;
+    background: #fff2e7;
 }
 .footer-section {
     height: 50px;
@@ -72,9 +72,9 @@ of those sections to manage the look and feel of the site. */
 }
 
 .footer-text{
-    color:#fff;
+    color:#777;
 }
 
 .navbar-default .navbar-brand {
-  color: #777;
+  color: #de8642;;
 }
