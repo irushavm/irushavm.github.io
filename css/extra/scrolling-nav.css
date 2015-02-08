@@ -7,6 +7,7 @@
 body {
     width: 100%;
     height: 100%;
+	background-color: #f8f8f8;
 }
 
 html {
@@ -42,14 +43,14 @@ of those sections to manage the look and feel of the site. */
     height: 100%;
     padding-top: 100px;
     text-align: center;
-    background: #f8f8f8;
+    background: #FFDB23;
 }
 
-.services-section {
+.projects-section {
     height: 100%;
     padding-top: 100px;
     text-align: center;
-    background: #f8f8f8;
+    background: #FFA311;
 }
 
 .contact-section {
@@ -57,15 +58,15 @@ of those sections to manage the look and feel of the site. */
     padding-top: 100px;
     padding-bottom: 50px;
     text-align: center;
-    background: #f8f8f8;
+    background: #E87F0C;
 }
+/*
 .footer-section {
     height: 100%;
     padding-top: 20px;
     padding-bottom:30px;
     text-align: center;
-    background: transparent;
-}
+}*/
 
 .list-group {
   padding-left: 0;
@@ -73,7 +74,9 @@ of those sections to manage the look and feel of the site. */
 }
 
 .footer-text{
-    color:#777;
+	padding-top:20px;
+	padding-bottom:20px;
+	color:#777;
 }
 
 .navbar-default .navbar-brand {
@@ -82,8 +85,37 @@ of those sections to manage the look and feel of the site. */
 
 }
 
+.list-group-item {
+  background-color: #FFDB23;
+  border: 1px solid #FFA311;
+}
+
+
+/*Highlight text*/
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #fff;
+  text-decoration: underline;
+}
+/*END OF Highlight text*/
+
+.white-text{
+	font-weight:bold;
+	font-size: 1.3em;
+	color: #fff;	
+}
+
+.title-text{
+	color:#de8642;
+}
+
+
 h1{
-    color:#de8642;;
+    color:#fff;
 }
 
 hr {
@@ -91,5 +123,5 @@ hr {
   margin-bottom: 20px;
   padding-bottom: 20px;
   border: 0;
-  border-top: 1px solid #7F2609;
+  border-top: 1px solid #E84704;
 }
