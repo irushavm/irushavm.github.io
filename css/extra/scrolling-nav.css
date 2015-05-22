@@ -36,21 +36,27 @@ of those sections to manage the look and feel of the site. */
     height: 100%;
     padding-top: 100px;
     text-align: center;
-    background: #f8f8f8;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+   background: #424242;
 }
 
 .about-section {
+
+	
     height: 100%;
     padding-top: 100px;
     text-align: center;
-    background: #FFDB23;
+    background: #F2A954;
 }
 
 .projects-section {
     height: 100%;
     padding-top: 100px;
     text-align: center;
-    background: #FFA311;
+    background: #D9593F;
 }
 
 .contact-section {
@@ -58,7 +64,7 @@ of those sections to manage the look and feel of the site. */
     padding-top: 100px;
     padding-bottom: 50px;
     text-align: center;
-    background: #E87F0C;
+    background: #8C2425;
 }
 /*
 .footer-section {
@@ -80,7 +86,7 @@ of those sections to manage the look and feel of the site. */
 }
 
 .navbar-default .navbar-brand {
-  color: #de8642;
+  color: #8C2425;/*#de8642;*/ 
   font-weight: bold;
 
 }
@@ -110,7 +116,7 @@ a:focus {
 }
 
 .title-text{
-	color:#de8642;
+	color:#8C2425;/*#de8642;*/
 }
 
 
@@ -123,5 +129,5 @@ hr {
   margin-bottom: 20px;
   padding-bottom: 20px;
   border: 0;
-  border-top: 1px solid #E84704;
+  border-top: 2px solid #e80e04;
 }
