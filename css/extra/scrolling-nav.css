@@ -7,12 +7,13 @@
 body {
     width: 100%;
     height: 100%;
-	background-color: #f8f8f8;
+	background-color: #911146/*f8f8f8*/;
 }
 
 html {
     width: 100%;
     height: 100%;
+    overflow-x: hidden; 
 }
 
 @media(min-width:767px) {
@@ -34,13 +35,11 @@ of those sections to manage the look and feel of the site. */
 
 .intro-section {
     height: 100%;
-    padding-top: 100px;
+	width: 100%;
     text-align: center;
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-   background: #424242;
+	padding-top: 100px;
+	background: #331226;/*#820233;
+	/*#424242;*/
 }
 
 .about-section {
@@ -49,14 +48,14 @@ of those sections to manage the look and feel of the site. */
     height: 100%;
     padding-top: 100px;
     text-align: center;
-    background: #F2A954;
+    background: #331226;/*#820233;/*#F2A954;*/
 }
 
 .projects-section {
     height: 100%;
     padding-top: 100px;
     text-align: center;
-    background: #D9593F;
+    background: #331226;/*#820233;/*#D9593F;*/
 }
 
 .contact-section {
@@ -64,7 +63,7 @@ of those sections to manage the look and feel of the site. */
     padding-top: 100px;
     padding-bottom: 50px;
     text-align: center;
-    background: #8C2425;
+    background: #331226;/*#820233;/*#8C2425*/
 }
 /*
 .footer-section {
@@ -81,21 +80,62 @@ of those sections to manage the look and feel of the site. */
 
 .footer-text{
 	padding-top:20px;
-	padding-bottom:20px;
-	color:#777;
+	padding-bottom:10px;
+	color:#D4405A;
+	font-size: 12pt;
 }
 
+
+
+/*---------------------------------Navbar-----------------------------*/
+
+/*------------Brand Name*/
 .navbar-default .navbar-brand {
-  color: #8C2425;/*#de8642;*/ 
+  color: #FFF;/*#de8642;*/ 
   font-weight: bold;
-
+  font-size:20pt;
 }
+.navbar-default .navbar-brand:hover{
+  color: #F9E4B4;
+  background-color:transparent;
+}
+.navbar-default .navbar-brand:focus {
+  color: #FFFFFF;
+  background-color:transparent;
+}
+
+/*------------Menu Items*/
+.navbar-default .navbar-nav > li > a {
+  color: #FFF;
+  font-size:15pt;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #F9E4B4;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #FFF;
+  background-color: #CF363A;
+}
+/*Color selection*/
+.navbar-default {
+  background-color: #911146;
+  border-bottom: 10px solid #CF363A;
+}
+
+
+
+/*---------------------------------EOF Navbar-----------------------------*/
+
+
 
 .list-group-item {
-  background-color: #FFDB23;
+  background-color: #FFFFFF/*#FFDB23*/;
   border: 1px solid #FFA311;
 }
-
 
 /*Highlight text*/
 a {
@@ -112,16 +152,20 @@ a:focus {
 .white-text{
 	font-weight:bold;
 	font-size: 1.3em;
-	color: #fff;	
+	color: #FFFFFF;	
 }
 
 .title-text{
-	color:#8C2425;/*#de8642;*/
+	color:#FFFFFF;/*#de8642;*/
 }
 
-
 h1{
-    color:#fff;
+    color:#F9E4B4;
+}
+
+p{
+	font-size: 20pt;
+    color:#FFFFFF;
 }
 
 hr {
@@ -129,5 +173,24 @@ hr {
   margin-bottom: 20px;
   padding-bottom: 20px;
   border: 0;
-  border-top: 2px solid #e80e04;
+  border-top: 1px solid #CF363A;
+}
+
+
+
+
+
+.welcome-text{
+	padding-top: 3em;
+	color:#F9E4B4;/*#de8642;*/
+	font-size:56pt;
+}
+
+.full{
+	background: url(../../img/backgnd.png) center ;
+	 -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: 50%;
+    -o-background-size: cover;
+
 }
