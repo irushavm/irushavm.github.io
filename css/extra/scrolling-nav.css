@@ -37,8 +37,8 @@ of those sections to manage the look and feel of the site. */
     height: 100%;
     width: 100%;
     text-align: center;
-    padding-top: 5em;
-    padding-bottom:5em;	   
+    padding-top: 1em;
+    padding-bottom:20em;	   
     background: #331226;/*#820233;
 	/*#424242;*/
 }
@@ -57,7 +57,7 @@ of those sections to manage the look and feel of the site. */
     height: 100%;
     width: 100%;
     padding-top: 5em;
-    padding-bottom:0em;
+    padding-bottom:30em;
     text-align: center;
     background: #331226;/*#820233;/*#D9593F;*/
 }
