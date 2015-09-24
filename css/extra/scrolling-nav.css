@@ -35,10 +35,11 @@ of those sections to manage the look and feel of the site. */
 
 .intro-section {
     height: 100%;
-	width: 100%;
+    width: 100%;
     text-align: center;
-	padding-top: 100px;
-	background: #331226;/*#820233;
+    padding-top: 5em;
+    padding-bottom:5em;	   
+    background: #331226;/*#820233;
 	/*#424242;*/
 }
 
@@ -46,22 +47,24 @@ of those sections to manage the look and feel of the site. */
 
 	
     height: 100%;
-    padding-top: 100px;
+    padding-top: 5em;
+    padding-bottom:5em;
     text-align: center;
     background: #331226;/*#820233;/*#F2A954;*/
 }
 
 .projects-section {
     height: 100%;
-    padding-top: 100px;
+    width: 100%;
+    padding-top: 5em;
+    padding-bottom:0em;
     text-align: center;
     background: #331226;/*#820233;/*#D9593F;*/
 }
 
 .contact-section {
-    height: 140%;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 80em;
+    padding-bottom:10em;
     text-align: center;
     background: #331226;/*#820233;/*#8C2425*/
 }
@@ -164,9 +167,22 @@ h1{
 }
 
 p{	
-	font-size: 20pt;
+	font-size: 14pt;
     color:#FFFFFF;
 }
+p.welcome-font{
+
+  font-size: 20pt;
+    color:#FFFFFF;
+}
+
+p.big-font{
+
+  font-size: 20pt;
+    color:#FFFFFF;
+}
+
+
 
 .contact-font{
 
@@ -211,4 +227,29 @@ hr {
 
 .contact-vspace {
 	margin-bottom: 7em;
+}
+
+
+
+a.project-title{
+    font-size: 20pt;
+    color:#FFFFFF;
+}
+
+a.project-title:hover{
+  text-decoration: none;
+  border-bottom: 1px solid #CF363A;
+}
+
+
+
+
+a.btn:hover{
+  color:#CF363A;
+
+}
+
+a.btn:focus{
+  color:#CF363A;
+
 }
