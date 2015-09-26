@@ -184,9 +184,15 @@ p.big-font{
 
 .contact-font{
 
-	font-size: 20pt;
+	font-size: 18pt;
     color:#FFFFFF;
 }
+
+a..contact-font:hover{
+  text-decoration: none;
+  border-bottom: 1px solid #CF363A;
+}
+
 
 hr {
   margin-top: 0px;
