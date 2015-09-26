@@ -34,38 +34,36 @@ The padding is very important to make sure the scrollspy picks up the right area
 of those sections to manage the look and feel of the site. */
 
 .intro-section {
-    height: 100%;
-    width: 100%;
     text-align: center;
-    padding-top: 1em;
-    padding-bottom:20em;	   
+    padding-top: 5em;
+    padding-bottom:35em;	  
+    display:block; 
     background: #331226;/*#820233;
 	/*#424242;*/
 }
 
 .about-section {
 
-	
-    height: 100%;
     padding-top: 5em;
-    padding-bottom:5em;
+    padding-bottom:35em;
     text-align: center;
+    display:block;
     background: #331226;/*#820233;/*#F2A954;*/
 }
 
 .projects-section {
-    height: 100%;
-    width: 100%;
     padding-top: 5em;
-    padding-bottom:30em;
+    padding-bottom:35em;
     text-align: center;
+    display:block;
     background: #331226;/*#820233;/*#D9593F;*/
 }
 
 .contact-section {
-    padding-top: 80em;
-    padding-bottom:10em;
+    padding-top: 5em;
+    padding-bottom:35em;
     text-align: center;
+    display:block;
     background: #331226;/*#820233;/*#8C2425*/
 }
 /*
@@ -227,6 +225,7 @@ hr {
 
 .contact-vspace {
 	margin-bottom: 7em;
+  display:block;
 }
 
 
