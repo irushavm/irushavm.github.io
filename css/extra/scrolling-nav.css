@@ -13,7 +13,7 @@ body {
 html {
     width: 100%;
     height: 100%;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 @media(min-width:400px) {
@@ -28,51 +28,27 @@ html {
         padding: 0;
     }
 }
-
-/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
-The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
-of those sections to manage the look and feel of the site. */
-
+.section {
+  padding-top: 5em;
+  padding-bottom:25em;
+  text-align: center;
+  display:block;
+}
 .intro-section {
-    text-align: center;
-    padding-top: 5em;
-    padding-bottom:35em;	  
-    display:block; 
-    background: #331226;/*#820233;
-	/*#424242;*/
+  background: #331226;
 }
 
 .about-section {
-
-    padding-top: 5em;
-    padding-bottom:35em;
-    text-align: center;
-    display:block;
-    background: #331226;/*#820233;/*#F2A954;*/
+  background: #331226;
 }
 
 .projects-section {
-    padding-top: 5em;
-    padding-bottom:35em;
-    text-align: center;
-    display:block;
-    background: #331226;/*#820233;/*#D9593F;*/
+  background: #331226;
 }
 
 .contact-section {
-    padding-top: 5em;
-    padding-bottom:35em;
-    text-align: center;
-    display:block;
-    background: #331226;/*#820233;/*#8C2425*/
+  background: #331226;
 }
-/*
-.footer-section {
-    height: 100%;
-    padding-top: 20px;
-    padding-bottom:30px;
-    text-align: center;
-}*/
 
 .list-group {
   padding-left: 0;
@@ -92,7 +68,7 @@ of those sections to manage the look and feel of the site. */
 
 /*------------Brand Name*/
 .navbar-default .navbar-brand {
-  color: #FFF;/*#de8642;*/ 
+  color: #FFF;/*#de8642;*/
   font-weight: bold;
   font-size:20pt;
 }
@@ -153,7 +129,7 @@ a:focus {
 .white-text{
 	font-weight:bold;
 	font-size: 1.3em;
-	color: #FFFFFF;	
+	color: #FFFFFF;
 }
 
 .title-text{
@@ -179,9 +155,9 @@ h4{
 h5{
     color:#FFFFFF;
 }
-p{	
-	font-size: 14pt;
-    color:#FFFFFF;
+p{
+  font-size: 14pt;
+  color:#FFFFFF;
 }
 p.welcome-font{
 
@@ -203,7 +179,7 @@ p.big-font{
     color:#FFFFFF;
 }
 
-a..contact-font:hover{
+a.contact-font:hover{
   text-decoration: none;
   border-bottom: 1px solid #CF363A;
 }
@@ -217,23 +193,10 @@ hr {
   border-top: 1px solid #CF363A;
 }
 
-
-
-
-
 .welcome-text{
 	padding-top: 3em;
-	color:#F9E4B4;/*#de8642;*/
+	color:#F9E4B4;
 	font-size:56pt;
-}
-
-.full{
-	background: url(../../img/backgnd.png) center ;
-	 -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: 50%;
-    -o-background-size: cover;
-
 }
 
 .col-xs-12{
@@ -262,8 +225,6 @@ a.project-title:hover{
 }
 
 
-
-
 a.btn:hover{
   color:#CF363A;
 
@@ -272,4 +233,28 @@ a.btn:hover{
 a.btn:focus{
   color:#CF363A;
 
+}
+
+
+.about-section .about-focus-text{
+  background-color: #a03676;
+  border: 1px solid #7c2a5c;
+  margin-top: 50px;
+}
+
+.about-section about-roles-section {
+  padding-top: 30px;
+}
+
+.about-section about-roles-section .role-text {
+  padding-top: 70px;
+}
+
+.space-above {
+    padding-top:50px;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    margin-right:-4px;
 }
