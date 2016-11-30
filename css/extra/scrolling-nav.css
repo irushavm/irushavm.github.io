@@ -33,23 +33,9 @@ html {
   padding-bottom:25em;
   text-align: center;
   display:block;
+  background: #331220;
+  /*#331226;*/
 }
-.intro-section {
-  background: #331226;
-}
-
-.about-section {
-  background: #331226;
-}
-
-.projects-section {
-  background: #331226;
-}
-
-.contact-section {
-  background: #331226;
-}
-
 .list-group {
   padding-left: 0;
   padding-top: 10%;
@@ -242,12 +228,8 @@ a.btn:focus{
   margin-top: 50px;
 }
 
-.about-section about-roles-section {
-  padding-top: 30px;
-}
-
-.about-section about-roles-section .role-text {
-  padding-top: 70px;
+.about-section .role-text {
+  padding-top: 100px;
 }
 
 .space-above {
@@ -257,4 +239,8 @@ a.btn:focus{
     display:inline-block;
     float:none;
     margin-right:-4px;
+}
+
+.text-center {
+  text-align: center;
 }
