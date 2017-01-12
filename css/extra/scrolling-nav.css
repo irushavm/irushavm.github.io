@@ -250,7 +250,8 @@ a.btn:focus{
 }
 
 .resume-btn {
-  font-size: 40px;
+  display: inline-block;
+  font-size: 200%;
   background-color: #333;
   padding: 20px;
   border-radius: 10px;
@@ -260,6 +261,7 @@ a.btn:focus{
 }
 
 .resume-btn:hover {
+  color: #fff;
   background-color: #7c2a5c;
   text-decoration: none;
 }
