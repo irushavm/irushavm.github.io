@@ -248,3 +248,22 @@ a.btn:focus{
 .text-center {
   text-align: center;
 }
+
+.resume-btn {
+  font-size: 40px;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #a03676;
+  border: 1px solid #7c2a5c;
+  text-decoration: none;
+}
+
+.resume-btn:hover {
+  background-color: #7c2a5c;
+  text-decoration: none;
+}
+
+.navbar-toggle {
+  background-color: #fff;
+}
