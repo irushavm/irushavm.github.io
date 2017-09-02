@@ -1,49 +1,29 @@
 define(["react"], function(React) {
   var create = React.createElement;
+  return React.createClass({
+    propTypes: {
+      "title": React.PropTypes.string.isRequired,
+      "subtitle": React.PropTypes.string.isRequired,
+      "message": React.PropTypes.string.isRequired,
+      "profile": React.PropTypes.object.isRequired,
+    },
 
-  return create("div", {});
+
+    render: function() {
+      return create("section", { className: "hero is-medium is-dark", style: {backgroundColor: "#373737"}},
+        create("div", {className: "hero-body", style: { paddingTop: "8rem", paddingBottom: "8rem"}},
+          create("div", {className: "container has-text-centered"},
+            create("img", { src: this.props.profile.href , style: { border: "15px solid #222", borderRadius: "50%", width: "300px", marginBottom: 50}}),
+            create("h1", { className: "title"}, this.props.title),
+            create("h2", { className: "subtitle"}, this.props.subtitle),
+            create("p",{}, this.props.message)
+          )
+        )
+      )
+    }
+
+  });
 });
-
-
-// <section class="hero is-info is-large">
-//   <!-- Hero header: will stick at the top -->
-//   </script>
-//   <div class="hero-head">
-//     <nav class="nav" style="position: fixed; z-index:100;top: 0; left: 5%; right:5%; background-color:red; border-radius: 0px 0px 10px 10px;">
-//       <div class="container">
-//         <div class="nav-left">
-//           <a class="nav-item">
-//             Irusha Vidanamadura
-//           </a>
-//         </div>
-//         <span class="nav-toggle" onclick="document.getElementById("nav-menu").classList.toggle("is-active");">
-//           <span></span>
-//           <span></span>
-//           <span></span>
-//         </span>
-//         <div id="nav-menu" class="nav-right nav-menu">
-//           <a class="nav-item is-active">
-//             Home
-//           </a>
-//           <a class="nav-item">
-//             Examples
-//           </a>
-//           <a class="nav-item">
-//             Documentation
-//           </a>
-//           <span class="nav-item">
-//             <a class="button is-info is-inverted">
-//               <span class="icon">
-//                 <i class="fa fa-github"></i>
-//               </span>
-//               <span>Download</span>
-//             </a>
-//           </span>
-//         </div>
-//       </div>
-//     </nav>
-//   </div>
-//
 //   <!-- Hero content: will be in the middle -->
 //   <div class="hero-body">
 //     <div class="container has-text-centered">

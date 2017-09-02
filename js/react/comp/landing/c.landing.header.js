@@ -1,95 +1,62 @@
-define(["react"], function(React) {
+define(["react"], function (React) {
   var create = React.createElement;
   return React.createClass({
+    
     propTypes: {
-      "title": React.PropTypes.string.isRequired
+      title: React.PropTypes.string.isRequired,
+      menuItems: React.PropTypes.object.isRequired,
     },
+
     createTitle: function (title) {
-      return create("div", {className: "nav-left"},
-        create("a", {className: "nav-item"}, title));
+      return create("div", { className: "navbar-brand" },
+        create("a", { className: "navbar-item is-size-4 ", }, title),
+        this.createMobileMenu());
     },
-    createMobileMenu: function() {
+    
+    createMobileMenu: function () {
       var span = create("span");
       return create("span", {
-          className: "nav-toggle",
-          onClick: function () {
-            document.getElementById("nav-menu").classList.toggle("is-active");
-          }
-        }, span, span, span);
-    },
-    createMenuItems: function() {
-      return create("div", {
-        id: "nav-menu",
-        className: "nav-right"
-      })
-    },
-    render: function() {
-      return create("nav", {
-        className: "hero-head",
-        style: {
-          position: "fixed",
-          zIndex:100,
-          top: 0,
-          left: 0.05,
-          right:0.05,
-          backgroundColor: "#444",
-          borderRadius: "0px 0px 10px 10px"
+        className: "navbar-burger",
+        onClick: function () {
+          document.getElementById("navbar-menu").classList.toggle("is-active");
         }
-      }, create("container", {} ,
-        this.createTitle(this.props.title), this.createMobileMenu(), this.createMenuItems()
-      ));
+      }, span, span, span);
+    },
+    
+    createMenuItems: function () {
+      return create("div", {
+        id: "navbar-menu",
+        className: "navbar-menu"
+      },
+        create("div", {className: "navbar-end"},
+          this.props.menuItems.map(function (item) {
+            return create("a", {
+              className: "navbar-item",
+              href: item.href,
+            }, item.text)
+          })
+        )
+      )
+    },
+    
+    render: function () {
+      return create("div", { className: "hero-head" },
+        create("div", {
+          className: "navbar",
+          style: {
+            position: "fixed",
+            zIndex: 100,
+            top: 0,
+            left: 0,
+            right: 0,
+            // borderRadius: "0px 0px 10px 10px"
+          }
+        }, create("div", { className: "container" },
+          this.createTitle(this.props.title),
+          this.createMenuItems()
+        )
+        )
+      );
     }
   });
 });
-
-//         <div id="nav-menu" class="nav-right nav-menu">
-//           <a class="nav-item is-active">
-//             Home
-//           </a>
-//           <a class="nav-item">
-//             Examples
-//           </a>
-//           <a class="nav-item">
-//             Documentation
-//           </a>
-//           <span class="nav-item">
-//             <a class="button is-info is-inverted">
-//               <span class="icon">
-//                 <i class="fa fa-github"></i>
-//               </span>
-//               <span>Download</span>
-//             </a>
-//           </span>
-//         </div>
-//       </div>
-//     </nav>
-//   </div>
-//
-//   <!-- Hero content: will be in the middle -->
-//   <div class="hero-body">
-//     <div class="container has-text-centered">
-//       <h1 class="title">
-//         Title
-//       </h1>
-//       <h2 class="subtitle">
-//         Subtitle
-//       </h2>
-//     </div>
-//   </div>
-//
-//   <!-- Hero footer: will stick at the bottom -->
-//   <div class="hero-foot">
-//     <nav class="tabs is-boxed is-fullwidth">
-//       <div class="container">
-//         <ul>
-//           <li class="is-active"><a>Overview</a></li>
-//           <li><a>Modifiers</a></li>
-//           <li><a>Grid</a></li>
-//           <li><a>Elements</a></li>
-//           <li><a>Components</a></li>
-//           <li><a>Layout</a></li>
-//         </ul>
-//       </div>
-//     </nav>
-//   </div>
-// </section>
