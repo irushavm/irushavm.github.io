@@ -1,4 +1,4 @@
-define(["react", "./c.about.experience"], function(React,experienceCardList) {
+define(["react"], function(React,) {
   var create = React.createElement;
 
   return React.createClass({
@@ -19,10 +19,10 @@ define(["react", "./c.about.experience"], function(React,experienceCardList) {
     render: function() {
       return create("section", {
         id: "about",
-        className: "hero is-info"
-      },create("div", {className: "hero-body"},
+        className: "hero is-success"
+      },create("div", {className: "hero-body", style: {backgroundColor: "#F7B722"}},
           create("div", {className: "container"},
-            this.createLayout()
+            // this.createLayout()
             )
         )
       );
