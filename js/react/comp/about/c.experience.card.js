@@ -1,11 +1,15 @@
-define(["react", "./c.about.experience"], function(React,experienceCard) {
+define(["react"], function(React) {
   var create = React.createElement;
 
   return React.createClass({
+    propTypes: {
+      className: React.PropTypes.string.isRequired,
+      record: React.PropTypes.object.isRequired,
+      style: React.PropTypes.object.isRequired,
+    },
     render: function() {
       return create("div", {className: this.props.className, style: this.props.style},
-        create("div", {className: "is-size-5 has-text-centered", style: {marginBottom: "10px"} }, this.props.title),
-        this.props.exp.map(function (exp) {
+        this.props.record.map(function (exp) {
           return create("div", {className: "box"},
             create("a", {className: "media", href: exp.link, target: "_blank"},
               create("div", { className: "media-left" },
