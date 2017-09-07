@@ -27,18 +27,20 @@ define(["react"], function (React, ) {
           recordGrid.map(function (expRow) {
             return create("div", { className: "columns" },
               expRow.map(function (exp, expInd) {
-                if (!exp.name) { return create("div", {className: "column " + expInd }); }
+                if (!exp.name) { return create("div", { className: "column " + expInd }); }
                 return create("div", { className: "column" },
-                  create("div", { className: "card has-text-centered", style: { margin: "25px" } },
-                    create("div", { className: "card-image", style: { width: "400px" } },
-                      create("div", { className: "image is-3by2" },
-                        create("img", { src: exp.imgSrc })
-                      )
-                    ),
-                    create("div", { className: "card-content" },
-                      create("div", { className: "content" },
-                        create("div", { className: "is-size-4" }, exp.name),
-                        create("div", { className: "is-size-6" }, exp.desc)
+                  create("div", { className: "card has-text-centered", style: { margin: "25px", height: "95%", borderRadius: "5px" } },
+                    create("a", { href: exp.link, target: "_blank" },
+                      create("div", { className: "card-image" },
+                        create("div", { className: "image is-3by2" },
+                          create("img", { src: exp.imgSrc, style: { width: "96%", height: "96%", top: "2.5%", left: "2%", borderRadius: "5px 5px 0px 0px" } })
+                        )
+                      ),
+                      create("div", { className: "card-content" },
+                        create("div", { className: "content" },
+                          create("div", { className: "is-size-4" }, exp.name),
+                          create("div", { className: "is-size-6" }, exp.desc)
+                        )
                       )
                     )
                   )

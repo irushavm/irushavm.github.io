@@ -17,8 +17,9 @@ requirejs([
   'comp/about/work/c.about.work',
   'comp/about/vol/c.about.vol',
   'comp/project/c.project',
+  'comp/footer/c.footer',
 ], function(React, ReactDOM, constants,
-  LandingSection, AboutBioSection, AboutWorkSection, AboutVolSection, ProjectSection) {
+  LandingSection, AboutBioSection, AboutWorkSection, AboutVolSection, ProjectSection, FooterSection) {
   ReactDOM.render(
     React.createElement('div', {},
     [
@@ -27,6 +28,7 @@ requirejs([
       React.createElement(AboutWorkSection, constants.work),
       React.createElement(AboutVolSection, constants.vol),
       React.createElement(ProjectSection, constants.proj),
+      React.createElement(FooterSection, constants.footer),
     ]
     ),
     document.getElementById('app')

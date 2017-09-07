@@ -14,16 +14,22 @@ define(["react", "./c.landing.header", "./c.landing.body"], function (React, hea
           href: "#page-top"
         },
         {
-          text: "About",
-          href: "#about"
+          text: "About Me",
+          href: "#about",
+          dropdown: [
+            {
+              text: "Work Experience",
+              href: "#about-work"
+            },
+            {
+              text: "Volunteering",
+              href: "#about-vol"
+            }
+          ]
         },
         {
           text: "Projects",
           href: "#projects"
-        },
-        {
-          text: "Contact Me",
-          href: "#contact"
         }
       ]
     }),

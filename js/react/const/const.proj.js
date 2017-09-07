@@ -3,35 +3,26 @@ define([], function () {
         "desc": "Check out my projects below.",
         "record": [
             {
-                "name": "This website!",
-                "desc": "desc",
-                "link": "https://www.klipfolio.com/",
-                "imgSrc": "https://pbs.twimg.com/profile_images/876115785466466304/sE4r6qaA_400x400.jpg",
+                "name": "irushavm.github.io",
+                "desc": "Hosted on Github pages only using ReactJS and RequireJS",
+                "link": "https://github.com/irushavm/irushavm.github.io",
+                "imgSrc": "img/proj/irushavm.github.io.jpg",
+                "place": "Personal project"
             },
             {
-                "name": "PCB AtMega32u4",
-                "desc": "desc",
-                "link": "https://www.klipfolio.com/",
-                "imgSrc": "https://pbs.twimg.com/profile_images/876115785466466304/sE4r6qaA_400x400.jpg",
+                "name": "ATMega32U4 Design Workshop",
+                "desc": "Contains Eagle PCB Schematic and Board design for the IEEE Carleton PCB Design workshop",
+                "link": "https://github.com/CarletonSLAM/pcb-design-workshop-atmega32u4/tree/rev2-roadrunner/",
+                "imgSrc": "img/proj/pcb.design.workshop.jpg",
+                "place": "Carleton Stay Late and Make"
             },
             {
-                "name": "IEEE Carleton Univerity Student Branch",
-                "desc": "desc",
-                "link": "https://www.klipfolio.com/",
-                "imgSrc": "https://pbs.twimg.com/profile_images/876115785466466304/sE4r6qaA_400x400.jpg",
-            },
-            {
-                "name": "IEEE Carleton Univerity Student Branch",
-                "desc": "desc",
-                "link": "https://www.klipfolio.com/",
-                "imgSrc": "https://pbs.twimg.com/profile_images/876115785466466304/sE4r6qaA_400x400.jpg",
-            },
-            {
-                "name": "IEEE Carleton Univerity Student Branch",
-                "desc": "desc",
-                "link": "https://www.klipfolio.com/",
-                "imgSrc": "https://pbs.twimg.com/profile_images/876115785466466304/sE4r6qaA_400x400.jpg",
-            },
+                "name": "CU In the Air",
+                "desc": "Launched a Tiva C Series microcontroller with a gps, weather metric reader, digital transmission, and video transmissions in a high altitude weather balloon",
+                "link": "http://carletonslam.github.io/spacegoldfish/",
+                "imgSrc": "img/proj/spacegoldfish.png",
+                "place": "Carleton Stay Late and Make"
+            }
         ]
     };
 });
