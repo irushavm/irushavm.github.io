@@ -19,7 +19,7 @@ define([], function () {
             {
                 "place": "CUHacking",
                 "link": "http://cuhacking.com/",
-                "position": "Hackathon Organizer",
+                "position": "Hackathon Volunteer",
                 "start": "Winter 2017"
             },
             {
