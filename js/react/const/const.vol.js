@@ -2,7 +2,13 @@ define([], function () {
     return {
         "desc": "I gained most of my skills and volunteer experience from the IEEE Societies around the city. They provided me with opportunities that couldn't have been given anywhere else.",
         "record": [
-            {},
+            {
+                "place": "IEEE Carleton Univerity Student Branch",
+                "link": "http://ieeecarleton.ca/",
+                "position": "Branch Chair",
+                "start": "May 2017",
+                "end": "Apr 2018",
+            },
             {
                 "place": "IEEE Ottawa Section",
                 "link": "http://www.ieeeottawa.ca/",
@@ -11,11 +17,16 @@ define([], function () {
                 "end": "May 2017",
             },
             {
-                "place": "IEEE Carleton Univerity Student Branch",
-                "link": "http://ieeecarleton.ca/",
-                "position": "Branch Chair",
-                "start": "May 2017",
-                "end": "Apr 2018",
+                "place": "CUHacking",
+                "link": "http://cuhacking.com/",
+                "position": "Hackathon Organizer",
+                "start": "Winter 2017"
+            },
+            {
+                "place": "MLH Local Hack Day - Carleton",
+                "link": "https://www.facebook.com/events/111987559283250/",
+                "position": "Volunteer",
+                "start": "December 3, 2016"
             },
             {
                 "place": "Stay Late and Make",
@@ -25,23 +36,11 @@ define([], function () {
                 "end": "Apr 2017",
             },
             {
-                "place": "CUHacking",
-                "link": "http://cuhacking.com/",
-                "position": "Hackathon Organizer",
-                "start": "Winter 2017"
-            },
-            {
                 "place": "IEEE SPAC 2016",
                 "link": "http://ieeespac.ca/",
                 "position": "Lead Director",
                 "start": "Sept 2015",
                 "end": "Feb 2016",
-            },
-            {
-                "place": "MLH Local Hack Day - Carleton",
-                "link": "https://www.facebook.com/events/111987559283250/",
-                "position": "Volunteer",
-                "start": "December 3, 2016"
             },
             {
                 "place": "Virtual Ventures - Hour of Code",

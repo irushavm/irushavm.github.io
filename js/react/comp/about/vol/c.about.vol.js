@@ -7,32 +7,31 @@ define(["react", "comp/about/c.experience.card"], function (React) {
       record: React.PropTypes.array.isRequired
     },
     createLayout: function () {
+      var volRecords = [];
+      for (var i = 0; i < this.props.record.length; i += 2) {
+        volRecords.push([this.props.record[i], this.props.record[i + 1]]);
+      }
       return create("div", {},
         create("div", { className: "has-text-centered", style: { paddingBottom: "25px" } }, create("strong", { className: "white-text is-size-2" }, "My Volunteer Experiences")),
-        create("div", { className: "white-text is-size-3", style: { paddingBottom: "40px" } }, this.props.desc),
-        create("ul", { style: { position: "relative", paddingTop: "1rem", paddingBottom: "7rem" } },
-          this.props.record.map(function (exp, expIndex, arr) {
-            if (!exp.place) { return create("li"); }
-            return create("li", {
-              className: "well-on-hover",
-              style: (expIndex % 2 === 0) ? {
-                textAlign: "right",
-                width: " 30%",
-                marginLeft: "17%",
-                padding: "10px",
-                marginBottom: "3rem"
-              } : {
-                  marginLeft: "53%",
-                  wdith: "100%",
-                  position: "absolute",
-                  width: "30%",
-                  padding: "10px",
-                },
-            }, create("a", { className: "no-hover", href: exp.link, target: "_blank" },
-              create("strong", { className: "is-size-5" }, exp.place),
-              create("div", {}, create("strong", {}, exp.position)),
-              create("div", {}, exp.start + (!exp.end ? "" : " - " + exp.end))
-            )
+        create("div", { className: "white-text is-size-4 has-text-centered", style: { paddingBottom: "40px" } }, this.props.desc),
+        create("div", { className: "container", style: { width: "50%", paddingTop: "1rem" } },
+          volRecords.map(function (volRecordSet) {
+            return create("div", { className: "columns" },
+              volRecordSet.map(function (vol, index) {
+                if (!vol) { return create("div", { className: "column" }) }
+                return create("div", {
+                  className: "column well-on-hover",
+                  style: {
+                    textAlign: (index % 2 === 0) ? "right" : "left",
+                    padding: "20px",
+                  }
+                }, create("a", { className: "no-hover", href: vol.link, target: "_blank" },
+                  create("strong", { className: "is-size-5" }, vol.place),
+                  create("div", {}, create("strong", {}, vol.position)),
+                  create("div", {}, vol.start + (!vol.end ? "" : " - " + vol.end))
+                )
+                )
+              })
             )
           })
         )
