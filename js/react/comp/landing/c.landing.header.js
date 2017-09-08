@@ -51,8 +51,9 @@ define(["react"], function (React) {
                     document.getElementById("navbar-menu").classList.toggle("is-active");
                   }
                 }, item.text),
-                create("div", { className: "navbar-dropdown is-boxed is-right" },
-                  item.dropdown.map(function (dropItem) {
+                create("div", {
+                  className: "navbar-dropdown is-boxed is-right",
+                }, item.dropdown.map(function (dropItem) {
                     return create("a", {
                       className: "navbar-item is-size-5",
                       href: dropItem.href,

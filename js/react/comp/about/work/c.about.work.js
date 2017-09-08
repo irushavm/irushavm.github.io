@@ -12,7 +12,7 @@ define(["react", "comp/about/c.experience.card"], function (React, experienceCar
         create("div", { className: "tile is-ancestor" },
           create("div", { className: "tile is-6 is-vertical is-parent" },
             create("h1", { className: "tile is-child" }),
-            create("h1", { className: "tile is-child is-size-3", style: { paddingBottom: "40px" } }, this.props.desc),
+            create("h1", { className: "tile is-child is-size-3 ", style: { paddingBottom: "40px" } }, this.props.desc),
             create("h1", { className: "tile is-child" })
           ),
           create("div", { className: "tile is-6 is-vertical is-parent" },

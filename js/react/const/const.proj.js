@@ -10,11 +10,25 @@ define([], function () {
                 "place": "Personal project"
             },
             {
-                "name": "ATMega32U4 Design Workshop",
+                "name": "PCB Design Workshop",
                 "desc": "Contains Eagle PCB Schematic and Board design for the IEEE Carleton PCB Design workshop",
                 "link": "https://github.com/CarletonSLAM/pcb-design-workshop-atmega32u4/tree/rev2-roadrunner/",
                 "imgSrc": "img/proj/pcb.design.workshop.jpg",
                 "place": "Carleton Stay Late and Make"
+            },
+            {
+                "name": "Magic School Bus",
+                "desc": "(Work in Progress) A React application capable of finding Points of Intrest along your route to visit during trips",
+                "link": "https://devpost.com/software/magic-school-bus/",
+                "imgSrc": "img/proj/magic.school.bus.png",
+                "place": "QHacks 2017"
+            },
+            {
+                "name": "Pick Up The Slack",
+                "desc": "A Slack slash command integration made for the IEEE Carleton Office to notify users in the room to look at Slack",
+                "link": "https://github.com/irushavm/pickUpTheSlack/",
+                "imgSrc": "img/proj/pick.up.the.slack.png",
+                "place": "QHacks 2017"
             },
             {
                 "name": "CU In the Air",

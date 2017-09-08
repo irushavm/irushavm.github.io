@@ -16,7 +16,7 @@ define(["react"], function(React) {
       },create("div", {className: "hero-body"},
           create("div", {className: "container has-text-centered"},
           create("div", { className: "has-text-centered", style: { paddingBottom: "25px" } }, create("strong", { className: "is-size-2" }, "About Me")),
-          create("h1", {className: "column is-size-3", style: {paddingBottom: "40px"}}, this.props.desc),
+          create("h1", {className: "column is-size-4", style: {paddingBottom: "40px"}}, this.props.desc),
             )
         )
       );

@@ -16,7 +16,7 @@ define(["react"], function (React) {
             create("img", { src: this.props.profile.href, style: { border: "15px solid #222", borderRadius: "50%", width: "300px", marginBottom: 50 } }),
             create("h1", { className: "title" }, this.props.title),
             create("h2", { className: "subtitle" }, this.props.subtitle),
-            create("p", {}, this.props.message)
+            create("p", { className: "is-size-4" }, this.props.message)
           )
         )
       )
