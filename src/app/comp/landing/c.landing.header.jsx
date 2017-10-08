@@ -5,7 +5,7 @@ function renderNavbar(name, badges) {
   return (
     <div className="navbar-brand">
       <span style={{ margin: "10px" }}>
-        <a className="navbar-item is-size-4" href="#page-top">
+        <a className="navbar-item is-size-4" href="#page-top" >
           {name}
         </a>
       </span>
@@ -53,7 +53,7 @@ function renderNavbarMenu(menuItems) {
                   </div>
                 </div>
                 :
-                <a href={item.href} key={`navbar-${itemIndex}`} className="navbar-item is-size-5" >
+                <a href={item.href} key={`navbar-${itemIndex}`} className="navbar-item is-size-5" onClick={() => document.getElementById("navbar-menu").classList.toggle("is-active")} >
                   {item.text}
                 </a>
             );
