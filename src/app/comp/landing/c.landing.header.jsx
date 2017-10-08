@@ -37,25 +37,23 @@ function renderNavbarMenu(menuItems) {
             return (
               item.dropdown ?
                 <div key={`navbar-${itemIndex}`} className="navbar-item is-size-5 has-dropdown is-hoverable" >
-                  <div>
-                    <a href={item.href} className="navbar-link" onClick={() => document.getElementById("navbar-menu").classList.toggle("is-active")}>
-                      {item.text}
-                    </a>
-                    <div className="navbar-dropdown is-boxed is-right">
-                      {
-                        item.dropdown.map((dropItem,dropItemIndex) => {
-                          return (
-                            <a key={`item-${itemIndex}-drop-${dropItemIndex}`} href={dropItem.href} className="navbar-item is-size-5" onClick={() => document.getElementById("navbar-menu").classList.toggle("is-active")}>
-                              {dropItem.text}
-                            </a>
-                          )
-                        })
-                      }
-                    </div>
+                  <a href={item.href} className="navbar-link" onClick={() => document.getElementById("navbar-menu").classList.toggle("is-active")}>
+                    {item.text}
+                  </a>
+                  <div className="navbar-dropdown is-boxed is-right">
+                    {
+                      item.dropdown.map((dropItem, dropItemIndex) => {
+                        return (
+                          <a key={`item-${itemIndex}-drop-${dropItemIndex}`} href={dropItem.href} className="navbar-item is-size-5" onClick={() => document.getElementById("navbar-menu").classList.toggle("is-active")}>
+                            {dropItem.text}
+                          </a>
+                        )
+                      })
+                    }
                   </div>
                 </div>
                 :
-                <a href={item.href} key={`navbar-${itemIndex}`} className="navbar-item is-size-5 has-dropdown" >
+                <a href={item.href} key={`navbar-${itemIndex}`} className="navbar-item is-size-5" >
                   {item.text}
                 </a>
             );
