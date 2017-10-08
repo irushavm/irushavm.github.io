@@ -1,13 +1,14 @@
 import React from 'react';
 
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 function renderNavbar(name, badges) {
   return (
     <div className="navbar-brand">
       <span style={{ margin: "10px" }}>
-        <a className="navbar-item is-size-4" href="#page-top" >
+        <div className="navbar-item is-size-4">
           {name}
-        </a>
+        </div>
       </span>
       {
         badges.map(badge =>
@@ -37,25 +38,25 @@ function renderNavbarMenu(menuItems) {
             return (
               item.dropdown ?
                 <div key={`navbar-${itemIndex}`} className="navbar-item is-size-5 has-dropdown is-hoverable" >
-                  <a href={item.href} className="navbar-link" onClick={() => document.getElementById("navbar-menu").classList.toggle("is-active")}>
+                  <AnchorLink href={item.href} className="navbar-link" onClick={() => document.getElementById("navbar-menu").classList.toggle("is-active")}>
                     {item.text}
-                  </a>
+                  </AnchorLink>
                   <div className="navbar-dropdown is-boxed is-right">
                     {
                       item.dropdown.map((dropItem, dropItemIndex) => {
                         return (
-                          <a key={`item-${itemIndex}-drop-${dropItemIndex}`} href={dropItem.href} className="navbar-item is-size-5" onClick={() => document.getElementById("navbar-menu").classList.toggle("is-active")}>
+                          <AnchorLink key={`item-${itemIndex}-drop-${dropItemIndex}`} href={dropItem.href} className="navbar-item is-size-5" onClick={() => document.getElementById("navbar-menu").classList.toggle("is-active")}>
                             {dropItem.text}
-                          </a>
+                          </AnchorLink>
                         )
                       })
                     }
                   </div>
                 </div>
                 :
-                <a href={item.href} key={`navbar-${itemIndex}`} className="navbar-item is-size-5" onClick={() => document.getElementById("navbar-menu").classList.toggle("is-active")} >
+                <AnchorLink href={item.href} key={`navbar-${itemIndex}`} className="navbar-item is-size-5" onClick={() => document.getElementById("navbar-menu").classList.toggle("is-active")} >
                   {item.text}
-                </a>
+                </AnchorLink>
             );
           })
         }
