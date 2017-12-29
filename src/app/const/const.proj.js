@@ -33,7 +33,7 @@ define([], function () {
             {
                 "name": "CU In the Air",
                 "desc": "Launched a Tiva C Series microcontroller with a gps, weather metric reader, digital transmission, and video transmissions in a high altitude weather balloon",
-                "link": "http://carletonslam.github.io/spacegoldfish/",
+                "link": "https://carletonslam.github.io/spacegoldfish/",
                 "imgSrc": "src/img/proj/spacegoldfish.png",
                 "place": "Carleton Stay Late and Make"
             }

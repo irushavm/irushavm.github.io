@@ -21,18 +21,18 @@ define([], function () {
                 "desc": "Bug-fixing, automated testing, and feature development for the BlackBerry Radar platform"
             },
             {
-                "logoSrc": "http://geeknewscentral.com/wp-content/uploads/2016/03/QNX-logo-300x300.jpg",
+                "logoSrc": "https://media.glassdoor.com/sqll/9037/qnx-software-systems-squarelogo-1404927346822.png",
                 "place": "QNX Software Systems",
-                "link": "http://www.qnx.com/content/qnx/en.html",
+                "link": "https://www.qnx.com/content/qnx/en.html",
                 "position": "Embedded BSP Roadmap Student",
                 "start": "May 2016",
                 "end": "Aug 2016",
                 "desc": "Using Coccinelle to migrate platform specific drivers to use a new set of hardware APIs"
             },
             {
-                "logoSrc": "https://pbs.twimg.com/profile_images/518145159796502528/rmPoTbqb_400x400.jpeg",
+                "logoSrc": "https://pbs.twimg.com/profile_images/929053829991079936/JXGrkjvp.jpg",
                 "place": "Macadamian",
-                "link": "http://www.macadamian.com/",
+                "link": "https://www.macadamian.com/",
                 "position": "Dev Student",
                 "start": "Jan 2016",
                 "end": "Apr 2016",
