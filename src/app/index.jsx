@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { render } from 'react-dom';
-
+import '../../index.css';
 
 import LandingSection from './comp/landing/c.landing.jsx';
 import BioSection from './comp/about/bio/c.about.bio.jsx';

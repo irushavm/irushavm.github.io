@@ -29,7 +29,7 @@ export default class VolSection extends React.Component {
                     volRecordSet.map(function (vol, index) {
                       if (!vol) { return <div key={`vol-${volRecordIndex}-${index}`} className="column"></div> }
                       return (
-                        <a href={vol.link} target="_blank" key={`vol-${volRecordIndex}-${index}`} className="column well-on-hover" style={{ textAlign: (index % 2 === 0) ? "right" : "left", padding: "20px" }}>
+                        <a href={vol.link} target="_blank" key={`vol-${volRecordIndex}-${index}`} className="column well-on-hover vol-tile" style={{ textAlign: (index % 2 === 0) ? "right" : "left", padding: "20px" }}>
                           <div className="no-hover">
                             <strong className="is-size-5">
                               {vol.place}

@@ -6,14 +6,14 @@ function renderNavbar(name, badges) {
   return (
     <div className="navbar-brand">
       <span style={{ margin: "10px" }}>
-        <div className="navbar-item is-size-4">
+          <AnchorLink href='#page-top' className="navbar-item is-size-4 page-title">
           {name}
-        </div>
+          </AnchorLink>
       </span>
       {
         badges.map(badge =>
-          <span key={`badge-${badge.icon}`} style={{ margin: "10px" }}>
-            <a className="navbar-item is-hidden-mobile" href={badge.href} target="_blank">
+          <span className="is-hidden-mobile" key={`badge-${badge.icon}`} style={{ margin: "10px" }}>
+            <a className="navbar-item " href={badge.href} target="_blank">
               <i className={`fa fa-${badge.icon}  is-size-3`}>
               </i>
             </a>

@@ -1,15 +1,13 @@
-define([
-    "./const.bio",
-    "./const.menu",
-    "./const.work",
-    "./const.vol",
-    "./const.proj",
-], function (bio, menu, work, vol, proj) {
-    return {
-        bio: bio,
-        menu, menu,
-        work: work,
-        vol, vol,
-        proj: proj
-    };
-});
+import bio from "./const.bio"
+import menu from "./const.menu"
+import work from "./const.work"
+import vol from "./const.vol"
+import proj from "./const.proj"
+
+module.exports = {
+    bio: bio,
+    menu, menu,
+    work: work,
+    vol, vol,
+    proj: proj
+}
