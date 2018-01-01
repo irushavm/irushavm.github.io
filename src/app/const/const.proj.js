@@ -2,17 +2,24 @@ module.exports = {
     desc: 'Check out my projects below.',
     record: [
         {
-            name: 'irushavm.github.io',
-            desc: 'Hosted on Github pages only using ReactJS and RequireJS',
+            name: 'Email Newsletter',
+            desc: 'A quick project to generate html for the IEEE Carleton Newsletter',
+            link: 'https://github.com/CarletonSLAM/CarletonNewsletter',
+            imgSrc: 'src/img/proj/carleton.newsletter.png',
+            place: 'Carleton Stay Late and Make'
+        },
+        {
+            name: 'Personal Website',
+            desc: 'Written in React and built using Webpack ',
             link: 'https://github.com/irushavm/irushavm.github.io',
-            imgSrc: 'src/img/proj/irushavm.github.io.jpg',
+            imgSrc: 'src/img/proj/irushavm.github.io.png',
             place: 'Personal project'
         },
         {
             name: 'PCB Design Workshop',
             desc: 'Contains Eagle PCB Schematic and Board design for the IEEE Carleton PCB Design workshop',
             link: 'https://github.com/CarletonSLAM/pcb-design-workshop-atmega32u4/tree/rev2-roadrunner/',
-            imgSrc: 'src/img/proj/pcb.design.workshop.jpg',
+            imgSrc: 'src/img/proj/pcb.design.workshop.png',
             place: 'Carleton Stay Late and Make'
         },
         {

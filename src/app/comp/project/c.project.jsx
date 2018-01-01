@@ -16,7 +16,7 @@ export default class ProjectSection extends React.Component {
               </div>
               <div className="card-content">
                 <div className="content">
-                  <div className="is-size-4">
+                  <div className="is-size-4" style={{fontWeight:'bold'}}>
                     {exp.name}
                   </div>
                   <div className="is-size-6">
