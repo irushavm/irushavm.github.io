@@ -9,7 +9,7 @@ export default class VolSection extends React.Component {
       volRecords.push([this.props.record[i], this.props.record[i + 1]]);
     }
     return (
-      <div>
+      <div className="volunteering-section">
         <div className="has-text-centered" style={{ paddingBottom: "25px" }}>
           <strong className="has-text-white is-size-2">
             My Volunteer Experiences

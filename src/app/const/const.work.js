@@ -2,6 +2,15 @@ module.exports = {
     desc: 'I had the pleasure to work with fantastic people and companies throughout these past few years, working on device drivers, message queues, server infrastructures, and fron-end frameworks.',
     record: [
         {
+            logoSrc: 'https://media.glassdoor.com/sqll/9037/qnx-software-systems-squarelogo-1404927346822.png',
+            place: 'BlackBerry QNX',
+            link: 'https://www.qnx.com/content/qnx/en.html',
+            position: 'Systems Software Developer',
+            start: 'May 2018',
+            end: 'Present',
+            desc: 'Develop and deliver customer-based BSPs, drivers, utilities, and applications'
+        },
+        {
             logoSrc: 'https://pbs.twimg.com/profile_images/876115785466466304/sE4r6qaA_400x400.jpg',
             place: 'Klipfolio',
             link: 'https://www.klipfolio.com/',
@@ -21,7 +30,7 @@ module.exports = {
         },
         {
             logoSrc: 'https://media.glassdoor.com/sqll/9037/qnx-software-systems-squarelogo-1404927346822.png',
-            place: 'QNX Software Systems',
+            place: 'BlackBerry QNX',
             link: 'https://www.qnx.com/content/qnx/en.html',
             position: 'Embedded BSP Roadmap Student',
             start: 'May 2016',
@@ -29,7 +38,7 @@ module.exports = {
             desc: 'Using Coccinelle to migrate platform specific drivers to use a new set of hardware APIs'
         },
         {
-            logoSrc: 'https://pbs.twimg.com/profile_images/929053829991079936/JXGrkjvp.jpg',
+            logoSrc: 'https://pbs.twimg.com/profile_images/961987963633647617/ady8kIkL_400x400.jpg',
             place: 'Macadamian',
             link: 'https://www.macadamian.com/',
             position: 'Dev Student',

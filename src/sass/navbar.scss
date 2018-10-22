@@ -1,4 +1,7 @@
 .navbar {
+    a.navbar-item:hover {
+        color: #000;
+    }
     .navbar-brand {
         .page-title {
             font-weight: bold;
