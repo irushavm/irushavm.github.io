@@ -1,0 +1,61 @@
+.navbar {
+    .navbar-brand {
+        .page-title {
+            font-weight: bold;
+            font-size: 24px;
+            display: block !important;
+            text-align: center !important;
+            width: 280px;
+
+            &:hover {
+                cursor: pointer;
+                color: #0a0a0a;
+            }
+        }
+    }
+
+    .navbar-burger {
+        height: 3.2rem;
+        width: 5.25rem;
+        padding-bottom: 4.25rem;
+
+        span {
+            height: 4px;
+            width: 30px;
+
+            &:nth-child(1) {
+                margin-top: -6px;
+            }
+    
+            &:nth-child(2) {
+                margin-top: 2px;
+            }
+    
+            &:nth-child(3) {
+                margin-top: 10px;
+            }
+        }
+
+    }
+
+
+    .navbar-menu {
+        
+        .navbar-link, a.navbar-item {
+            &.is-active, &:hover {
+                color: #0a0a0a;
+            }
+        }
+        .navbar-item.has-dropdown > .navbar-link:nth-child(1) {
+
+            &::after {
+                border-color: #0a0a0a;
+                @include touch {
+                    border: 0px solid transparent
+                }
+            }
+        }
+    }
+
+}
+

@@ -4,8 +4,9 @@
   "description": "React and Webpack version of my site",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server",
-    "build": "webpack -p",
+    "css": "node-sass src/sass/main.scss index.css",
+    "dev": "npm run css && webpack-dev-server",
+    "build": "npm run css && webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -34,9 +35,12 @@
     "webpack": "^3.6.0"
   },
   "devDependencies": {
+    "bulma": "^0.7.2",
     "clean-webpack-plugin": "^0.1.17",
     "css-loader": "^0.28.7",
     "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.9.4",
+    "postcss": "^7.0.5",
     "webpack-dev-server": "^2.9.7",
     "webpack-hot-middleware": "^2.21.0"
   }

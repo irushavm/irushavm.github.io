@@ -11,12 +11,12 @@ export default class VolSection extends React.Component {
     return (
       <div>
         <div className="has-text-centered" style={{ paddingBottom: "25px" }}>
-          <strong className="white-text is-size-2">
+          <strong className="has-text-white is-size-2">
             My Volunteer Experiences
           </strong>
         </div>
 
-        <div className="white-text is-size-4 has-text-centered" style={{ paddingBottom: "40px" }}>
+        <div className="has-text-white is-size-4 has-text-centered" style={{ paddingBottom: "40px" }}>
           {this.props.desc}
         </div>
 

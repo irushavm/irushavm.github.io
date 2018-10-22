@@ -70,6 +70,7 @@ export default function renderHeader(props) {
   return (
     <div className="hero-head">
       <div className="navbar" style={{
+        borderBottom: '4px solid #4a4a4a',
         position: "fixed",
         zIndex: 100,
         top: 0,
