@@ -10,7 +10,7 @@ export default class VolSection extends React.Component {
     }
     return (
       <div className="volunteering-section">
-        <div className="has-text-centered" style={{ paddingBottom: "25px" }}>
+        <div className="title has-text-centered" style={{ paddingBottom: "25px" }}>
           <strong className="has-text-white is-size-2">
             My Volunteer Experiences
           </strong>

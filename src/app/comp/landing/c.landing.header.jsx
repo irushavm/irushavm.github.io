@@ -37,15 +37,15 @@ function renderNavbarMenu(menuItems) {
           menuItems.map(function (item, itemIndex) {
             return (
               item.dropdown ?
-                <div key={`navbar-${itemIndex}`} className="navbar-item is-size-5 has-dropdown is-hoverable" >
+                <div key={`navbar-${itemIndex}`} className="navbar-item is-size-4 has-dropdown is-hoverable" >
                   <AnchorLink href={item.href} className="navbar-link" onClick={() => document.getElementById("navbar-menu").classList.toggle("is-active")}>
                     {item.text}
                   </AnchorLink>
-                  <div className="navbar-dropdown is-boxed is-right">
+                  <div className="navbar-dropdown is-right">
                     {
                       item.dropdown.map((dropItem, dropItemIndex) => {
                         return (
-                          <AnchorLink key={`item-${itemIndex}-drop-${dropItemIndex}`} href={dropItem.href} className="navbar-item is-size-5" onClick={() => document.getElementById("navbar-menu").classList.toggle("is-active")}>
+                          <AnchorLink key={`item-${itemIndex}-drop-${dropItemIndex}`} href={dropItem.href} className="navbar-item is-size-4" onClick={() => document.getElementById("navbar-menu").classList.toggle("is-active")}>
                             {dropItem.text}
                           </AnchorLink>
                         )
@@ -54,7 +54,7 @@ function renderNavbarMenu(menuItems) {
                   </div>
                 </div>
                 :
-                <AnchorLink href={item.href} key={`navbar-${itemIndex}`} className="navbar-item is-size-5" onClick={() => document.getElementById("navbar-menu").classList.toggle("is-active")} >
+                <AnchorLink href={item.href} key={`navbar-${itemIndex}`} className="navbar-item is-size-4" onClick={() => document.getElementById("navbar-menu").classList.toggle("is-active")} >
                   {item.text}
                 </AnchorLink>
             );

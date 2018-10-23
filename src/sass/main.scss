@@ -23,10 +23,20 @@ $primary-invert: $pink-invert;
 // 4. Import the rest of Bulma
 */
 
-@import "../../node_modules/bulma/bulma";
+@mixin transition($property...) {
+    -moz-transition:    $property;
+    -o-transition:      $property;
+    -webkit-transition: $property;
+    transition:         $property;
+}
 
-@import "navbar.scss";
-@import "content.scss";
+$transition-timing: 0.2s;
+
+@import '../../node_modules/bulma/bulma';
+
+@import 'navbar.scss';
+@import 'content.scss';
+
 
 a {
     color: #fff;
@@ -40,4 +50,10 @@ a {
     }
 }
 
+section.hero {
+    padding-top:30px;
 
+    .title {
+        padding-bottom: 20px;
+    }
+}

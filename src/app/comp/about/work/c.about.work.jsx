@@ -7,7 +7,7 @@ export default class WorkSection extends React.Component {
   createLayout() {
     return (
       <div style={{ paddingBottom: "2rem" }}>
-        <div className="has-text-centered" style={{ paddingBottom: "25px" }}>
+        <div className="title has-text-centered">
           <strong className="is-size-2">My Work Experiences</strong>
         </div>
         <div className="tile is-ancestor">

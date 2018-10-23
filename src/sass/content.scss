@@ -5,7 +5,7 @@
         }
     }
     .well-on-hover {
-        transition: background-color .2s linear;
+        @include transition(background-color $transition-timing linear);
         border-radius: 5px;
         @include mobile {
             border: 1px solid $white;
@@ -20,7 +20,7 @@
 
 .box, .card {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    transition: all .3s cubic-bezier(.25,.8,.25,1);
+    @include transition(box-shadow $transition-timing cubic-bezier(.25,.8,.25,1));
     overflow: hidden;
 
     &:hover {

@@ -48,7 +48,7 @@ export default class ProjectSection extends React.Component {
     const _this = this;
     return (
       <div>
-        <div className="has-text-centered" style={{ paddingBottom: "25px" }}>
+        <div className="title has-text-centered">
           <strong className="is-size-2">My Projects</strong>
         </div>
         <h1 className="is-size-4 has-text-centered" style={{ paddingBottom: "40px" }}>
@@ -70,13 +70,13 @@ export default class ProjectSection extends React.Component {
   }
   render() {
     return (
-      <div id="projects" className="hero is-success" style={{ backgroundColor: "#e04e4e" }}>
+      <section id="projects" className="hero is-success" style={{ backgroundColor: "#e04e4e" }}>
         <div className="hero-body">
           <div className="container">
             {this.createLayout()}
           </div>
         </div>
-      </div>
+      </section>
     )
   }
 }
