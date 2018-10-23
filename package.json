@@ -4,8 +4,9 @@
   "description": "React and Webpack version of my site",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass src/sass/main.scss dist/index.css",
-    "dev": "npm run build-css && webpack-dev-server",
+    "dev-css": "node-sass src/sass/main.scss dist/index.css",
+    "build-css": "node-sass src/sass/main.scss dist/index.css --output-style compressed",
+    "dev": "npm run dev-css && webpack-dev-server",
     "build": "npm run build-css && webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
