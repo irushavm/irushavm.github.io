@@ -20,7 +20,7 @@ export default class VolSection extends React.Component {
           {this.props.desc}
         </div>
 
-        <div className="container" style={{ width: "50%", paddingTop: "1rem" }}>
+        <div className="container vol-items" style={{paddingTop: "1rem" }}>
           {
             volRecords.map((volRecordSet, volRecordIndex) => {
               return (

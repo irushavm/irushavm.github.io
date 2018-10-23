@@ -56,4 +56,11 @@ section.hero {
     .title {
         padding-bottom: 20px;
     }
+
+    .vol-items {
+        width: 50%;
+        @include mobile {
+            width: 100%;
+        }
+    }
 }
