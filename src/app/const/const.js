@@ -5,9 +5,9 @@ import vol from "./const.vol"
 import proj from "./const.proj"
 
 module.exports = {
-    bio: bio,
-    menu, menu,
-    work: work,
-    vol, vol,
-    proj: proj
+  bio: bio,
+  menu, menu,
+  work: work,
+  vol, vol,
+  proj: proj
 }
