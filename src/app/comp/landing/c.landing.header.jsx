@@ -16,7 +16,8 @@ export default class Navbar extends React.Component {
   }
 
   handleOutsideClick(event) {
-    if (this.node === event.target || !this.node.contains(event.target)) {
+    const menuNode = document.getElementById("navbar-menu")
+    if ((this.node === event.target || !this.node.contains(event.target)) && menuNode.hasClass && menuNode.hasClass("is-active")) {
       document.getElementById("navbar-menu").classList.toggle("is-active")
     }
   }
