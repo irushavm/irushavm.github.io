@@ -14,7 +14,7 @@ import constants from './const/const';
 import '../scss/main.scss';
 
 class App extends React.Component {
-
+  
   render() {
     return (
       <div>
@@ -28,5 +28,6 @@ class App extends React.Component {
     );
   }
 }
-
+  
 render(<App />, document.getElementById('app'));
+  

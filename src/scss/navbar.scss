@@ -1,110 +1,110 @@
 .navbar {
-    a.navbar-item:hover {
-        color: #000;
+  a.navbar-item:hover {
+    color: #000;
+  }
+  .navbar-brand {
+    .page-title {
+      font-weight: bold;
+      font-size: 24px;
+      display: block !important;
+      text-align: center !important;
+      width: 280px;
+
+      &:hover {
+        cursor: pointer;
+        color: #0a0a0a;
+      }
     }
-    .navbar-brand {
-        .page-title {
-            font-weight: bold;
-            font-size: 24px;
-            display: block !important;
-            text-align: center !important;
-            width: 280px;
+  }
 
-            &:hover {
-                cursor: pointer;
-                color: #0a0a0a;
-            }
-        }
+  .navbar-burger {
+    height: 3.2rem;
+    width: 5.25rem;
+    padding-bottom: 4.25rem;
+    @include transition(color $transition-timing ease);
+    @include transition(background-color $transition-timing ease);
+    &:hover {
+      color: $white;
+      background-color: #333;
     }
+    span {
+      height: 4px;
+      width: 30px;
 
-    .navbar-burger {
-        height: 3.2rem;
-        width: 5.25rem;
-        padding-bottom: 4.25rem;
-        @include transition(color $transition-timing ease);
-        @include transition(background-color $transition-timing ease);
-        &:hover {
-            color: $white;
-            background-color: #333;
-        }
-        span {
-            height: 4px;
-            width: 30px;
+      &:nth-child(1) {
+        margin-top: -6px;
+      }
 
-            &:nth-child(1) {
-                margin-top: -6px;
-            }
+      &:nth-child(2) {
+        margin-top: 2px;
+      }
 
-            &:nth-child(2) {
-                margin-top: 2px;
-            }
-
-            &:nth-child(3) {
-                margin-top: 10px;
-            }
-        }
+      &:nth-child(3) {
+        margin-top: 10px;
+      }
     }
+  }
 
 
-    .navbar-menu {
-        @include transition(max-height $transition-timing ease);
-        .navbar-link, a.navbar-item {
-            &.is-active, &:hover {
-                color: #0a0a0a;
-            }
-        }
-
-        // Make navlink Chevron color black and white on hover
-        .navbar-item.has-dropdown > .navbar-link:nth-child(1) {
-            &::after {
-                border-color: #0a0a0a;
-                @include touch {
-                    border: 0px solid transparent
-                }
-            }
-            &:hover::after{
-                border-color: $white;
-            }
-        }
-        // In mobile, make the slide down animation
-        @include until($navbar-breakpoint) {
-            overflow:hidden;
-            max-height:0;
-            display: block;
-            padding:0;
-            background-color: #EDEDED;
-            box-shadow: 0 8px 16px rgba($black, 0.1);
-            &.is-active {
-                @include overflow-touch;
-                max-height: calc(100vh - #{$navbar-height});
-                overflow: auto;
-                display: block;
-            }
-            .navbar-item:not(.has-dropdown), .navbar-link {
-                margin: 0;
-            }
-        }
-        // Make navlink color to black on hover
-        .navbar-item:not(.has-dropdown), .navbar-link {
-            margin: 5px;
-            @include transition(color $transition-timing ease);
-            @include transition(background-color $transition-timing ease);
-            &:hover {
-                color: $white;
-                background-color: #333;
-            }
-        }
-        // Make navlink dropdown square
-        .navbar-item > .navbar-dropdown {
-            border-radius:0;
-        }
+  .navbar-menu {
+    @include transition(max-height $transition-timing ease);
+    .navbar-link, a.navbar-item {
+      &.is-active, &:hover {
+        color: #0a0a0a;
+      }
     }
 
-    &.is-fixed-top, &.is-fixed-top-touch .navbar-menu  {
-         @include overflow-touch;
-         max-height: calc(100vh - #{$navbar-height});
-         overflow: auto;
+    // Make navlink Chevron color black and white on hover
+    .navbar-item.has-dropdown > .navbar-link:nth-child(1) {
+      &::after {
+        border-color: #0a0a0a;
+        @include touch {
+          border: 0px solid transparent
+        }
+      }
+      &:hover::after{
+        border-color: $white;
+      }
     }
+    // In mobile, make the slide down animation
+    @include until($navbar-breakpoint) {
+      overflow:hidden;
+      max-height:0;
+      display: block;
+      padding:0;
+      background-color: #EDEDED;
+      box-shadow: 0 8px 16px rgba($black, 0.1);
+      &.is-active {
+        @include overflow-touch;
+        max-height: calc(100vh - #{$navbar-height});
+        overflow: auto;
+        display: block;
+      }
+      .navbar-item:not(.has-dropdown), .navbar-link {
+        margin: 0;
+      }
+    }
+    // Make navlink color to black on hover
+    .navbar-item:not(.has-dropdown), .navbar-link {
+      margin: 5px;
+      @include transition(color $transition-timing ease);
+      @include transition(background-color $transition-timing ease);
+      &:hover {
+        color: $white;
+        background-color: #333;
+      }
+    }
+    // Make navlink dropdown square
+    .navbar-item > .navbar-dropdown {
+      border-radius:0;
+    }
+  }
+
+  &.is-fixed-top, &.is-fixed-top-touch .navbar-menu  {
+    @include overflow-touch;
+    max-height: calc(100vh - #{$navbar-height});
+    overflow: auto;
+  }
 
 }
 
