@@ -13,7 +13,6 @@ import constants from './const/const';
 
 import '../scss/main.scss';
 
-
 class App extends React.Component {
 
   render() {
