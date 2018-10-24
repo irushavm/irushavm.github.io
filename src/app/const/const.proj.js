@@ -5,42 +5,42 @@ module.exports = {
             name: 'Email Newsletter',
             desc: 'A quick project to generate html for the IEEE Carleton Newsletter',
             link: 'https://github.com/CarletonSLAM/CarletonNewsletter',
-            imgSrc: 'static/proj/carleton.newsletter.png',
+            imgSrc: 'static/img/carleton.newsletter.png',
             place: 'Carleton Stay Late and Make'
         },
         {
             name: 'Personal Website',
             desc: 'Written in React and built using Webpack ',
             link: 'https://github.com/irushavm/irushavm.github.io',
-            imgSrc: 'static/proj/irushavm.github.io.png',
+            imgSrc: 'static/img/irushavm.github.io.png',
             place: 'Personal project'
         },
         {
             name: 'PCB Design Workshop',
             desc: 'Contains Eagle PCB Schematic and Board design for the IEEE Carleton PCB Design workshop',
             link: 'https://github.com/CarletonSLAM/pcb-design-workshop-atmega32u4/tree/rev2-roadrunner/',
-            imgSrc: 'static/proj/pcb.design.workshop.png',
+            imgSrc: 'static/img/pcb.design.workshop.png',
             place: 'Carleton Stay Late and Make'
         },
         {
             name: 'Magic School Bus',
             desc: '(Work in Progress) A React application capable of finding Points of Intrest along your route to visit during trips',
             link: 'https://devpost.com/software/magic-school-bus/',
-            imgSrc: 'static/proj/magic.school.bus.png',
+            imgSrc: 'static/img/magic.school.bus.png',
             place: 'QHacks 2017'
         },
         {
             name: 'Pick Up The Slack',
             desc: 'A Slack slash command integration made for the IEEE Carleton Office to notify users in the room to look at Slack',
             link: 'https://github.com/irushavm/pickUpTheSlack/',
-            imgSrc: 'static/proj/pick.up.the.slack.png',
+            imgSrc: 'static/img/pick.up.the.slack.png',
             place: 'QHacks 2017'
         },
         {
             name: 'CU In the Air',
             desc: 'Launched a Tiva C Series microcontroller with a gps, weather metric reader, digital transmission, and video transmissions in a high altitude weather balloon',
             link: 'https://carletonslam.github.io/spacegoldfish/',
-            imgSrc: 'static/proj/spacegoldfish.png',
+            imgSrc: 'static/img/spacegoldfish.png',
             place: 'Carleton Stay Late and Make'
         }
     ]

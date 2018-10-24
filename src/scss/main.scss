@@ -30,9 +30,9 @@ $primary-invert: $pink-invert;
     transition:         $property;
 }
 
-$transition-timing: 0.2s;
+$transition-timing: 0.3s;
 
-@import '../../node_modules/bulma/bulma';
+@import '../../node_modules/bulma/bulma.sass';
 
 @import 'navbar.scss';
 @import 'content.scss';

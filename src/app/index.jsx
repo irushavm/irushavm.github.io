@@ -11,6 +11,8 @@ import FooterSection from './comp/footer/c.footer.jsx';
 
 import constants from './const/const';
 
+import '../scss/main.scss';
+
 
 class App extends React.Component {
 
