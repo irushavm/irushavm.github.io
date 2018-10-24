@@ -72,13 +72,16 @@
             max-height:0;
             display: block;
             padding:0;
-            background-color: #EFEFEF;
+            background-color: #EDEDED;
             box-shadow: 0 8px 16px rgba($black, 0.1);
             &.is-active {
                 @include overflow-touch;
                 max-height: calc(100vh - #{$navbar-height});
                 overflow: auto;
                 display: block;
+            }
+            .navbar-item:not(.has-dropdown), .navbar-link {
+                margin: 0;
             }
         }
         // Make navlink color to black on hover
