@@ -17,7 +17,7 @@ module.exports = {
       position: 'Software Developer (Co-op)',
       start: 'May 2017',
       end: 'Aug 2017',
-      desc: 'Developing and improving the Klipfolio product and user journey guide'
+      desc: 'Improving the Klipfolio User Experience and user journey flows'
     },
     {
       logoSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Blackberry_Logo_without_wordmark.svg/1280px-Blackberry_Logo_without_wordmark.svg.png',

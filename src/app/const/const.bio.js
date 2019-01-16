@@ -12,6 +12,6 @@ module.exports = {
     welcome: 'Experience in Embedded Systems, Web Development, Hobbist PCB Design, and Graphics Design'
   },
   about: {
-    desc: 'I am currently working at BlackBerry QNX in the Board Support Packaging (BSP) team after graduating from Carleton University. I am also an active member as an advisor to the IEEE Student branch at Carleton helping organize network-based events, social events, school workshops, and school competitions.'
+    desc: 'I am currently working at BlackBerry QNX in the Board Support Packaging (BSP) Service team after graduating from Carleton University. I am also an active member as an advisor to the IEEE Student branch at Carleton helping organize network-based events, social events, school workshops, and school competitions.'
   }
 }
