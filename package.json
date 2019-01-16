@@ -8,6 +8,7 @@
     "build-css": "node-sass src/sass/main.scss dist/index.css --output-style compressed",
     "dev": "webpack-dev-server",
     "build": "webpack -p",
+    "deploy": "npm run build && echo 'Removing cache in /tmp...' && rm -r /tmp/irushavm.github.io.dist && echo 'Copying dist to /tmp...' && cp -r ./dist /tmp/irushavm.github.io.dist && git checkout deploy && echo 'Replacing dist with one from /tmp...'  && rm -r ./dist && cp -r /tmp/irushavm.github.io.dist ./dist && git add ./dist && git commit -m 'New deployment' && git push -f origin deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
