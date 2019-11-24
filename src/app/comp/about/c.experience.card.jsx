@@ -61,7 +61,7 @@ export default class ExperienceCard extends React.Component {
             return (
               <div key={`exp-${expIndex}`}className="box">
                 <a href={exp.link} className="media" target="_blank">
-                  {this.renderCardLogo(exp.logoSrc)}
+                  {this.renderCardLogo(exp.imgSrc)}
                   <div className="media-content">
                     <div className="content">
                       {this.renderPlaceAndDuration(exp)}
