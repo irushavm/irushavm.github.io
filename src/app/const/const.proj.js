@@ -2,6 +2,13 @@ module.exports = {
   desc: 'Check out my projects below.',
   record: [
     {
+      name: 'Dashy',
+      desc: 'Information Dashboard providing social media, calendar, transportation, and weather updates in tile layout',
+      link: 'https://github.com/irushavm/ieee-office-dashboard',
+      imgSrc: 'https://github.com/irushavm/ieee-office-dashboard/raw/master/.github/readme/demo.png?raw=true',
+      place: 'Personal project'
+    },
+    {
       name: 'Email Newsletter',
       desc: 'A quick project to generate html for the IEEE Carleton Newsletter',
       link: 'https://github.com/CarletonSLAM/CarletonNewsletter',
@@ -29,13 +36,13 @@ module.exports = {
       imgSrc: 'static/img/projects/magic.school.bus.png',
       place: 'QHacks 2017'
     },
-    {
-      name: 'Pick Up The Slack',
-      desc: 'A Slack slash command integration made for the IEEE Carleton Office to notify users in the room to look at Slack',
-      link: 'https://github.com/irushavm/pickUpTheSlack/',
-      imgSrc: 'static/img/projects/pick.up.the.slack.png',
-      place: 'QHacks 2017'
-    },
+    // {
+    //   name: 'Pick Up The Slack',
+    //   desc: 'A Slack slash command integration made for the IEEE Carleton Office to notify users in the room to look at Slack',
+    //   link: 'https://github.com/irushavm/pickUpTheSlack/',
+    //   imgSrc: 'static/img/projects/pick.up.the.slack.png',
+    //   place: 'QHacks 2017'
+    // },
     {
       name: 'CU In the Air',
       desc: 'Launched a Tiva C Series microcontroller with a gps, weather metric reader, digital transmission, and video transmissions in a high altitude weather balloon',

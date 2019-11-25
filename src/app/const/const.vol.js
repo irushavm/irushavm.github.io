@@ -2,6 +2,20 @@ module.exports = {
   desc: 'I gained most of my skills and volunteer experience from the IEEE Societies around the city. They provided me with opportunities that couldn\'t have been given anywhere else.',
   record: [
     {
+      place: 'IEEE Ottawa Section',
+      link: 'http://www.ieeeottawa.ca/',
+      position: 'Publication Committee Chair',
+      start: 'Feb 2019',
+      end: 'Present',
+    },
+    {
+      place: 'IEEE Carleton Univerity Student Branch',
+      link: 'https://ieeecarleton.ca/',
+      position: 'Branch Advisor',
+      start: 'May 2018',
+      end: 'Apr 2019',
+    },
+    {
       place: 'Canada Learning Code Ottawa',
       link: 'https://www.canadalearningcode.ca/chapters/ottawa',
       position: 'Intro to Javascript Workshop Instructor',
