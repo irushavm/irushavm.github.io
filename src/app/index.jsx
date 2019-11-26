@@ -9,7 +9,7 @@ import VolSection from './comp/about/vol/c.about.vol.jsx';
 import ProjectSection from './comp/project/c.project.jsx';
 import FooterSection from './comp/footer/c.footer.jsx';
 
-import constants from './const/const';
+import constants from './const';
 
 import '../scss/main.scss';
 

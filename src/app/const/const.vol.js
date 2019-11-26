@@ -3,7 +3,7 @@ module.exports = {
   record: [
     {
       place: 'IEEE Ottawa Section',
-      link: 'http://www.ieeeottawa.ca/',
+      link: 'https://www.ieeeottawa.ca/',
       position: 'Publication Committee Chair',
       start: 'Feb 2019',
       end: 'Present',
@@ -36,14 +36,14 @@ module.exports = {
     },
     {
       place: 'IEEE Ottawa Section',
-      link: 'http://www.ieeeottawa.ca/',
+      link: 'https://www.ieeeottawa.ca/',
       position: 'Student Branch Representative',
       start: 'May 2016',
       end: 'May 2017',
     },
     {
       place: 'CUHacking',
-      link: 'http://cuhacking.com/',
+      link: 'https://cuhacking.com/',
       position: 'Hackathon Volunteer',
       start: 'Winter 2017'
     },
@@ -55,14 +55,14 @@ module.exports = {
     },
     {
       place: 'Stay Late and Make',
-      link: 'http://staylateandmake.ca/',
+      link: 'https://staylateandmake.ca/',
       position: 'Financial Director',
       start: 'Sept 2016',
       end: 'Apr 2017',
     },
     {
       place: 'IEEE SPAC 2016',
-      link: 'http://ieeespac.ca/',
+      link: 'https://ieeespac.ca/',
       position: 'Lead Director',
       start: 'Sept 2015',
       end: 'Feb 2016',
