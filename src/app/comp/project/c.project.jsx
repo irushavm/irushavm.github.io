@@ -1,36 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ProjectCard from './ProjectCard.jsx';
 
 export default class ProjectSection extends React.Component {
-  renderExperienceRow(expRow, rowI) {
-    return expRow.map((exp, expInd) => {
-      if (!exp.name) { return <div key={`exp-${rowI}-${expInd}`} className={`column ${expInd}`}> </div> }
-      return (
-        <div key={`exp-${rowI}-${expInd}`} className="column">
-          <div className="card has-text-centered" style={{ margin: "25px", height: "95%", borderRadius: "5px" }}>
-            <a href={exp.link} target="_blank">
-              <div className="card-image">
-                <div className="image is-3by2">
-                  <img src={exp.imgSrc} style={{ width: "96%", height: "96%", top: "2.5%", left: "2%", borderRadius: "5px 5px 0px 0px" }} />
-                </div>
-              </div>
-              <div className="card-content">
-                <div className="content">
-                  <div className="is-size-4" style={{fontWeight:'bold'}}>
-                    {exp.name}
-                  </div>
-                  <div className="is-size-6">
-                    {exp.desc}
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div> 
-      )
-
-    })
-  }
   createLayout() {
     var recordGrid = [[]];
     this.props.record.forEach(function (rec, ind) {
@@ -45,7 +17,6 @@ export default class ProjectSection extends React.Component {
         paddingElementCount++;
       }
     }
-    const _this = this;
     return (
       <div>
         <div className="title has-text-centered">
@@ -56,10 +27,18 @@ export default class ProjectSection extends React.Component {
         </h1>
         <div className="project-grid">
           {
-            recordGrid.map(function (expRow, expRowIndex) {
+            recordGrid.map((projectRow, projectRowIndex) => {
               return (
-                <div key={`project-row${expRowIndex}`} className="columns">
-                  {_this.renderExperienceRow(expRow, expRowIndex)}
+                <div key={`project-row-${projectRowIndex}`} className="columns">
+                  {
+                    projectRow.map((project, projectIndex) => {
+                      return (
+                        <div key={`exp-${projectRowIndex}-${projectIndex}`} className="column">
+                          <ProjectCard project={project}/>
+                        </div>
+                      );
+                    })
+                  }
                 </div>
               )
             })

@@ -88,7 +88,7 @@ export default class Navbar extends React.Component {
   render() {
     return (
       <div className="hero-head">
-        <div className="navbar" style={{
+        <div id="navbar" className="navbar" style={{
           borderBottom: '4px solid #4a4a4a',
           position: "fixed",
           zIndex: 100,

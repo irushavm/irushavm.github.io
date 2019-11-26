@@ -49,6 +49,7 @@
   .navbar-menu {
     @include transition(max-height $transition-timing ease);
     .navbar-link, a.navbar-item {
+      border-radius:5px;
       &.is-active, &:hover {
         color: #0a0a0a;
       }
@@ -96,7 +97,7 @@
     }
     // Make navlink dropdown square
     .navbar-item > .navbar-dropdown {
-      border-radius:0;
+      border-radius:7px;
     }
   }
 
