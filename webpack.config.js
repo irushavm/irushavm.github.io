@@ -38,7 +38,7 @@ var config = {
   devServer: {
     port: 8000,
     hotOnly: true,
-    inline: false
+    inline: true
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
@@ -57,6 +57,9 @@ var config = {
       }
     ])
   ],
+  watchOptions: {
+    poll: true
+  }
 };
 
 module.exports = config;
