@@ -1,13 +1,22 @@
 module.exports = {
-  desc: 'I had the pleasure to work with fantastic people and companies throughout these past few years, working on device drivers, message queues, server infrastructures, and fron-end frameworks.',
+  desc: 'I had the pleasure to work with fantastic people and companies throughout these past few years, working on device drivers, message queues, server infrastructure, and fron-end frameworks.',
   record: [
+    {
+      imgSrc: 'static/img/work/silabs.png',
+      place: 'Silicon Labs',
+      link: 'https://media-exp1.licdn.com/dms/image/C560BAQGnf4v45l15TA/company-logo_200_200/0?e=1610582400&v=beta&t=bGaeFeCCRxch4hMscCEH_Ef9fb_xIqcLEvY_xMIcNSA',
+      position: 'Software Developer',
+      start: 'July 2020',
+      end: 'Present',
+      desc: 'Create tools and application layer software used to accelerate customers\' time to market'
+    },
     {
       imgSrc: 'static/img/work/blackberry-qnx.png',
       place: 'BlackBerry QNX',
       link: 'https://www.qnx.com/content/qnx/en.html',
       position: 'Systems Software Developer',
       start: 'May 2018',
-      end: 'Present',
+      end: 'June 2020',
       desc: 'Develop and deliver customer-based BSPs, drivers, utilities, and applications'
     },
     {

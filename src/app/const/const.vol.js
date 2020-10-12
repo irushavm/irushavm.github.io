@@ -6,7 +6,7 @@ module.exports = {
       link: 'https://www.ieeeottawa.ca/',
       position: 'Publication Committee Chair',
       start: 'Feb 2019',
-      end: 'Present',
+      end: 'July 2020',
     },
     {
       place: 'IEEE Carleton Univerity Student Branch',
