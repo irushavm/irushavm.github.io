@@ -1,6 +1,7 @@
 .vscode/
 node_modules/
-dist/
+build/dist/
+build/certbot/
 package-lock.json
 index.css
 npm-debug.log

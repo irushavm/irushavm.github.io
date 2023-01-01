@@ -1,0 +1,16 @@
+# 2.0.0
+### Added
+* Docker compose stack for launching site using nginx and certbot
+* Development in docker container
+### Changed
+* Change project structure
+* Update app dependencies to resolve vulnerabilities
+### Removed
+* Github pages support
+### Security
+* Update app node dependencies
+
+# 1.0.0
+### Added
+* React app that pulls info from config files under `app/src/const`
+* Serve site using github pages

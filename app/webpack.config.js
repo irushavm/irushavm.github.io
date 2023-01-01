@@ -10,9 +10,10 @@ var SCSS_DIR = path.resolve(__dirname, 'src/scss');
 
 var config = {
   entry: APP_DIR + '/index.jsx',
+  mode: 'development',
   output: {
     path: BUILD_DIR,
-    filename: 'index.js?r=[hash:12]',
+    filename: 'index.js?r=[contenthash:12]',
   },
   // devtool: 'inline-source-map',
   module : {
@@ -36,26 +37,25 @@ var config = {
     ]
   },
   devServer: {
-    port: 8000,
-    hotOnly: true,
-    inline: true
+    port: 3000,
+    hot: true,
+    allowedHosts: "all",
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
     new MiniCssExtractPlugin({
-      filename:'index.css?r=[hash:12]'
+      filename:'index.css?r=[contenthash:12]'
     }),
     new HtmlWebpackPlugin({
       title: 'Irusha Vidanamadura',
       template: './static/index.html'
     }),
-    new CopyWebpackPlugin([
-      {
-        from: 'static/img',
-        to: 'static/img',
-      }
-    ])
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: "static/img", to: "static/img" },
+      ],
+    }),
   ],
   watchOptions: {
     poll: true

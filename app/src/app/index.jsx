@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
 import LandingSection from './comp/landing/c.landing.jsx';
 import BioSection from './comp/about/bio/c.about.bio.jsx';
@@ -28,6 +28,6 @@ class App extends React.Component {
     );
   }
 }
-  
-render(<App />, document.getElementById('app'));
-  
+
+const root = createRoot(document.getElementById('app'));
+root.render(<App tab="home" />);

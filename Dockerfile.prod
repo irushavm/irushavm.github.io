@@ -1,0 +1,14 @@
+# ###################################################################
+# Container to be used for building the production bundle
+# ###################################################################
+
+FROM node:lts-alpine
+MAINTAINER irusha@vidanamadura.net
+
+ADD ./app /app
+
+WORKDIR /app
+
+RUN npm install
+
+ENTRYPOINT ["npm", "run", "build"]

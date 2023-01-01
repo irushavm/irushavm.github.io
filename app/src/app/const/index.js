@@ -4,7 +4,7 @@ import work from "./const.work"
 import vol from "./const.vol"
 import proj from "./const.proj"
 
-module.exports = {
+export default {
   bio: bio,
   menu, menu,
   work: work,

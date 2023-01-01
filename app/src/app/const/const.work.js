@@ -1,13 +1,22 @@
 module.exports = {
-  desc: 'I had the pleasure to work with fantastic people and companies throughout these past few years, working on device drivers, message queues, server infrastructure, and fron-end frameworks.',
+  desc: 'I\'ve had the pleasure of working with fantastic people and organizations throughout these past few years.',
   record: [
+    {
+      imgSrc: 'static/img/work/zoox.jpeg',
+      place: 'Zoox',
+      link: 'https://zoox.com/',
+      position: 'Firmware Engineer',
+      start: 'February 2022',
+      end: 'Present',
+      desc: 'Improving system services in RTOS components on the vehicle'
+    },
     {
       imgSrc: 'static/img/work/silabs.png',
       place: 'Silicon Labs',
-      link: 'https://media-exp1.licdn.com/dms/image/C560BAQGnf4v45l15TA/company-logo_200_200/0?e=1610582400&v=beta&t=bGaeFeCCRxch4hMscCEH_Ef9fb_xIqcLEvY_xMIcNSA',
+      link: 'https://www.silabs.com/',
       position: 'Software Developer',
       start: 'July 2020',
-      end: 'Present',
+      end: 'January 2022',
       desc: 'Create tools and application layer software used to accelerate customers\' time to market'
     },
     {

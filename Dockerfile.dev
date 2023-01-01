@@ -1,0 +1,14 @@
+# ###################################################################
+# Container to be used for active website development
+# ###################################################################
+
+FROM node:lts-alpine
+MAINTAINER irusha@vidanamadura.net
+
+WORKDIR /app
+
+ADD ./app/package.json /app/package.json
+
+RUN npm install
+
+ENTRYPOINT ["sh"]
