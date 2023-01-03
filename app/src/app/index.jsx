@@ -1,6 +1,7 @@
 
 import React from 'react';
-import ReactGA from "react-ga";
+import ReactGA from 'react-ga';
+import Favicon from 'react-favicon';
 
 import { createRoot } from 'react-dom/client';
 
@@ -24,6 +25,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        <Favicon url='static/img/favicon.ico' />
         <LandingSection author={constants.bio.author} menu={constants.menu.items} />
         <BioSection {...constants.bio.about } />
         <WorkSection { ...constants.work } />
