@@ -1,26 +1,26 @@
 module.exports = {
-  "items": [
+  items: [
     {
-      text: "Home",
-      href: "#page-top"
+      text: 'Home',
+      href: '#page-top'
     },
     {
-      text: "About Me",
-      href: "#about",
+      text: 'About Me',
+      href: '#about',
       dropdown: [
         {
-          text: "Work Experience",
-          href: "#about-work"
+          text: 'Work Experience',
+          href: '#about-work'
         },
         {
-          text: "Volunteering",
-          href: "#about-vol"
+          text: 'Volunteering',
+          href: '#about-vol'
         }
       ]
     },
     {
-      text: "Projects",
-      href: "#projects"
+      text: 'Projects',
+      href: '#projects'
     }
   ]
 }

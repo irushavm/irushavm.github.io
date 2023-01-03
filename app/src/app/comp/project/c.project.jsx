@@ -1,20 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import ProjectCard from './ProjectCard.jsx';
+import React from 'react'
+import PropTypes from 'prop-types'
+import ProjectCard from './ProjectCard.jsx'
 
 export default class ProjectSection extends React.Component {
-  createLayout() {
-    var recordGrid = [[]];
+  createLayout () {
+    const recordGrid = [[]]
     this.props.record.forEach(function (rec, ind) {
-      var index = Math.floor(ind / 3);
-      recordGrid[index] = recordGrid[index] || [];
-      recordGrid[index].push(rec);
-    });
-    var paddingElementCount = recordGrid[recordGrid.length - 1].length % 3;
+      const index = Math.floor(ind / 3)
+      recordGrid[index] = recordGrid[index] || []
+      recordGrid[index].push(rec)
+    })
+    let paddingElementCount = recordGrid[recordGrid.length - 1].length % 3
     if (paddingElementCount !== 0) {
       while (paddingElementCount % 3 !== 0) {
         recordGrid[recordGrid.length - 1].push({})
-        paddingElementCount++;
+        paddingElementCount++
       }
     }
     return (
@@ -22,7 +22,7 @@ export default class ProjectSection extends React.Component {
         <div className="title has-text-centered">
           <strong className="is-size-2">My Projects</strong>
         </div>
-        <h1 className="is-size-4 has-text-centered" style={{ paddingBottom: "40px" }}>
+        <h1 className="is-size-4 has-text-centered" style={{ paddingBottom: '40px' }}>
           {this.props.desc}
         </h1>
         <div className="project-grid">
@@ -36,7 +36,7 @@ export default class ProjectSection extends React.Component {
                         <div key={`exp-${projectRowIndex}-${projectIndex}`} className="column">
                           <ProjectCard project={project}/>
                         </div>
-                      );
+                      )
                     })
                   }
                 </div>
@@ -45,11 +45,12 @@ export default class ProjectSection extends React.Component {
           }
         </div>
       </div>
-    );
+    )
   }
-  render() {
+
+  render () {
     return (
-      <section id="projects" className="hero is-success" style={{ backgroundColor: "#e04e4e" }}>
+      <section id="projects" className="hero is-success" style={{ backgroundColor: '#e04e4e' }}>
         <div className="hero-body">
           <div className="container">
             {this.createLayout()}
@@ -63,4 +64,4 @@ export default class ProjectSection extends React.Component {
 ProjectSection.propTypes = {
   desc: PropTypes.string.isRequired,
   record: PropTypes.array.isRequired
-};
+}

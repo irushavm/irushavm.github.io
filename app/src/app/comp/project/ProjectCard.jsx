@@ -1,15 +1,16 @@
 
-import React from 'react';
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import Modal from '../modal/Modal.jsx';
-import useModal from '../modal/useModal.jsx';
+import Modal from '../modal/Modal.jsx'
+import useModal from '../modal/useModal.jsx'
 
-const ProjectCard = ({ project, index, rowIndex }) => {
-  const { isShowing, toggle } = useModal();
+const ProjectCard = ({ project }) => {
+  const { isShowing, toggle } = useModal()
   return (
     <div className="card has-text-centered card-project" onClick={toggle}>
       <div className="card-image image is-3by2">
-        <img src={project.imgSrc} style={{ margin: "auto" }} />
+        <img src={project.imgSrc} style={{ margin: 'auto' }} />
       </div>
       <div className="card-content">
         <div className="is-size-4" style={{ fontWeight: 'bold' }}>
@@ -21,7 +22,7 @@ const ProjectCard = ({ project, index, rowIndex }) => {
       </div>
       <Modal
         isShowing={isShowing}
-        hide={toggle}
+        onClick={toggle}
       >
         <div style={{ textAlign: 'center' }}>
           <img src={project.imgSrc} className='modal-img' />
@@ -37,7 +38,11 @@ const ProjectCard = ({ project, index, rowIndex }) => {
         </div>
       </Modal>
     </div>
-  );
-};
+  )
+}
 
-export default ProjectCard;
+ProjectCard.propTypes = {
+  project: PropTypes.object.isRequired
+}
+
+export default ProjectCard
