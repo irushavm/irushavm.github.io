@@ -6,40 +6,40 @@ module.exports = {
       link: 'https://www.ieeeottawa.ca/',
       position: 'Publication Committee Chair',
       start: 'Feb 2019',
-      end: 'July 2020',
+      end: 'July 2020'
     },
     {
       place: 'IEEE Carleton Univerity Student Branch',
       link: 'https://ieeecarleton.ca/',
       position: 'Branch Advisor',
       start: 'May 2018',
-      end: 'Apr 2019',
+      end: 'Apr 2019'
     },
     {
       place: 'Canada Learning Code Ottawa',
       link: 'https://www.canadalearningcode.ca/chapters/ottawa',
       position: 'Intro to Javascript Workshop Instructor',
-      start: 'Nov 2018',
+      start: 'Nov 2018'
     },
     {
       place: 'Random Hacks of Kindness',
       link: 'https://rhok.ca/events/rhok-9/',
       position: 'Developer for StreetSmart project',
-      start: 'Oct 2018',
+      start: 'Oct 2018'
     },
     {
       place: 'IEEE Carleton Univerity Student Branch',
       link: 'https://ieeecarleton.ca/',
       position: 'Branch Chair',
       start: 'May 2017',
-      end: 'Apr 2018',
+      end: 'Apr 2018'
     },
     {
       place: 'IEEE Ottawa Section',
       link: 'https://www.ieeeottawa.ca/',
       position: 'Student Branch Representative',
       start: 'May 2016',
-      end: 'May 2017',
+      end: 'May 2017'
     },
     {
       place: 'CUHacking',
@@ -58,20 +58,20 @@ module.exports = {
       link: 'https://staylateandmake.ca/',
       position: 'Financial Director',
       start: 'Sept 2016',
-      end: 'Apr 2017',
+      end: 'Apr 2017'
     },
     {
       place: 'IEEE SPAC 2016',
       link: 'https://ieeespac.ca/',
       position: 'Lead Director',
       start: 'Sept 2015',
-      end: 'Feb 2016',
+      end: 'Feb 2016'
     },
     {
       place: 'Virtual Ventures - Hour of Code',
       link: 'https://hourofcode.com/ca',
       position: 'Volunteer',
       start: 'Dec 2014'
-    },
+    }
   ]
 }

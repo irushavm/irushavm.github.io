@@ -1,9 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
 export default class ExperienceCard extends React.Component {
-
-  renderCardLogo(logo) {
+  renderCardLogo (logo) {
     return (
       <div className="media-left">
         <figure>
@@ -13,7 +12,7 @@ export default class ExperienceCard extends React.Component {
     )
   }
 
-  renderPlaceAndDuration(exp) {
+  renderPlaceAndDuration (exp) {
     return (
       <div className="tile is-ancestor">
         <div className="tile is-parent">
@@ -21,8 +20,8 @@ export default class ExperienceCard extends React.Component {
             <strong className="is-size-4">{exp.place}</strong>
           </div>
           <div className="tile is-child is-4">
-            <b className="is-size-6" style={{ marginTop: "20px" }}>
-              {exp.start + " - " + exp.end}
+            <b className="is-size-6" style={{ marginTop: '20px' }}>
+              {exp.start + ' - ' + exp.end}
             </b>
           </div>
         </div>
@@ -30,21 +29,21 @@ export default class ExperienceCard extends React.Component {
     )
   }
 
-  renderPosition(exp) {
+  renderPosition (exp) {
     return (
-      <div className="tile is-ancestor" style={{ marginTop: "-35px" }}>
+      <div className="tile is-ancestor" style={{ marginTop: '-35px' }}>
         <div className="tile is-parent">
           <div className="tile is-child">
-            <small className="is-size-6">{"  " + exp.position}</small>
+            <small className="is-size-6">{'  ' + exp.position}</small>
           </div>
         </div>
       </div>
     )
   }
 
-  renderDescription(desc) {
+  renderDescription (desc) {
     return (
-      <div className="tile is-ancestor" style={{ marginTop: "-10px" }}>
+      <div className="tile is-ancestor" style={{ marginTop: '-10px' }}>
         <div className="tile is-parent">
           <div>
             {desc}
@@ -53,14 +52,15 @@ export default class ExperienceCard extends React.Component {
       </div>
     )
   }
-  render() {
+
+  render () {
     return (
-      <div className={this.props.className} style={this.props.style}>
+      <div className={this.props.className}>
         {
           this.props.record.map((exp, expIndex) => {
             return (
               <div key={`exp-${expIndex}`}className="box">
-                <a href={exp.link} className="media" target="_blank">
+                <a href={exp.link} className="media" target="_blank" rel="noreferrer">
                   {this.renderCardLogo(exp.imgSrc)}
                   <div className="media-content">
                     <div className="content">
@@ -82,5 +82,5 @@ export default class ExperienceCard extends React.Component {
 
 ExperienceCard.propTypes = {
   className: PropTypes.string.isRequired,
-  record: PropTypes.array.isRequired,
+  record: PropTypes.array.isRequired
 }

@@ -1,3 +1,9 @@
+# 2.1.0
+### Added
+* Favicon support
+* Google Analytics Tracking via dotenv variable GA_MEASUREMENT_ID
+* Add ESLint checking and automatic fixing
+
 # 2.0.0
 ### Added
 * Docker compose stack for launching site using nginx and certbot

@@ -1,11 +1,13 @@
 {
   "name": "irushavm.github.io",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "React and Webpack version of my site",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --host 0.0.0.0",
     "build": "webpack --mode production",
+    "lint": "eslint src/**/*.{js,jsx,ts,tsx,json}",
+    "lint:fix": "eslint --fix src/**/*.{js,jsx,ts,tsx,json}",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -41,6 +43,9 @@
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.3",
     "dotenv-webpack": "^8.0.1",
+    "eslint": "^8.31.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-react": "^7.31.11",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.2",
     "node-sass": "^8.0.0",
