@@ -1,11 +1,9 @@
 {
   "name": "irushavm.github.io",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "React and Webpack version of my site",
   "main": "index.js",
   "scripts": {
-    "dev-css": "node-sass src/sass/main.scss dist/index.css",
-    "build-css": "node-sass src/sass/main.scss dist/index.css --output-style compressed",
     "dev": "webpack-dev-server --host 0.0.0.0",
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -33,13 +31,15 @@
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-ga": "^3.3.1"
   },
   "devDependencies": {
     "bulma": "^0.9.4",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.3",
+    "dotenv-webpack": "^8.0.1",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.2",
     "node-sass": "^8.0.0",

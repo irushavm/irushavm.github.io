@@ -1,5 +1,7 @@
 
 import React from 'react';
+import ReactGA from "react-ga";
+
 import { createRoot } from 'react-dom/client';
 
 import LandingSection from './comp/landing/c.landing.jsx';
@@ -12,6 +14,10 @@ import FooterSection from './comp/footer/c.footer.jsx';
 import constants from './const';
 
 import '../scss/main.scss';
+
+if (process.env.GA_MEASUREMENT_ID.length > 0) {
+  ReactGA.initialize(process.env.GA_MEASUREMENT_ID);
+}
 
 class App extends React.Component {
   
